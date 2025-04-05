@@ -101,10 +101,7 @@ Nosso público englota todos aqueles que buscam se manter informadas, e que não
 
 ![image](https://github.com/user-attachments/assets/828c9cc4-cfb7-40a2-821e-4feb48002827)
 ![image](https://github.com/user-attachments/assets/2778b293-e096-4979-8a4f-199c1e198e5c) <br>
-![image](https://github.com/user-attachments/assets/88f75725-1ab2-45b5-939b-90109a2c828c)
-![image](https://github.com/user-attachments/assets/d732fd78-6d32-45da-bb4c-2c7e7cb826b8) <br>
-![image](https://github.com/user-attachments/assets/21b09a24-fc70-4a0b-b864-f8e962b817c3)
-![image](https://github.com/user-attachments/assets/8998cc3c-1e0d-4f3c-8248-a4943616e6d0) <br>
+
 ![image](https://github.com/user-attachments/assets/a4b7d449-04e4-4ea6-89cf-6c661fc925c2)
 ![image](https://github.com/user-attachments/assets/8600725e-a7f6-4cce-97ab-f36364bf76bb) <br>
 ![image](https://github.com/user-attachments/assets/af40a47b-2d68-4199-a3f8-543fc61cebe5)
@@ -130,8 +127,10 @@ Nosso público englota todos aqueles que buscam se manter informadas, e que não
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
-
+![image](https://github.com/user-attachments/assets/88f75725-1ab2-45b5-939b-90109a2c828c)
+![image](https://github.com/user-attachments/assets/d732fd78-6d32-45da-bb4c-2c7e7cb826b8) <br>
+![image](https://github.com/user-attachments/assets/21b09a24-fc70-4a0b-b864-f8e962b817c3)
+![image](https://github.com/user-attachments/assets/8998cc3c-1e0d-4f3c-8248-a4943616e6d0) <br>
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
 > Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
