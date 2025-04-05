@@ -98,10 +98,20 @@ Nosso público englota todos aqueles que buscam se manter informadas, e que não
 
 **✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
 
+-> Matriz CSD
+![image](https://github.com/user-attachments/assets/828c9cc4-cfb7-40a2-821e-4feb48002827) <br>
 
-![image](https://github.com/user-attachments/assets/828c9cc4-cfb7-40a2-821e-4feb48002827)
+-> Mapa de stakeholders
 ![image](https://github.com/user-attachments/assets/2778b293-e096-4979-8a4f-199c1e198e5c) <br>
 
+-> Entrevistas qualitativas
+![image](https://github.com/user-attachments/assets/3bda2f51-9c31-474a-9424-971d8497aec3)
+![image](https://github.com/user-attachments/assets/ecfe7673-87a7-4947-9d08-c994ab5c5b20)
+![image](https://github.com/user-attachments/assets/0b6f694d-01be-4534-9cba-9b376b05470d)
+![image](https://github.com/user-attachments/assets/cdb31937-d923-40a8-bf1e-58ff851e3629)
+![image](https://github.com/user-attachments/assets/89bc4bc3-69e9-4af3-8754-a38d6bb1371e)
+
+-> Highlights de pesquisa
 ![image](https://github.com/user-attachments/assets/a4b7d449-04e4-4ea6-89cf-6c661fc925c2)
 ![image](https://github.com/user-attachments/assets/8600725e-a7f6-4cce-97ab-f36364bf76bb) <br>
 ![image](https://github.com/user-attachments/assets/af40a47b-2d68-4199-a3f8-543fc61cebe5)
