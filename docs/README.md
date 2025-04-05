@@ -33,16 +33,10 @@ Nosso público-alvo são todas as pessoas interessadas em se manter bem informad
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
->
->
+Imparcialidade de notícias e jornalismo
 
 Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em nossos bolsos. Com as inúmeras fontes de notícias, o acesso às notícias acaba sendo massivo e instantâneo, com isso, passamos a enfrentar desafios, como por exemplo: distinguir notícias confiáveis, identificar notícias que não sofreram manipulações para agradar terceiros e a identificação de notícias feitas para enganar o leitor. É notavel a existencia de uma dificuldade para que os leitores possam se manter atualizados com as notícias do dia.
 
->
 > **Orientações**:
 >
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -63,9 +57,13 @@ Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em noss
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+Como observado nas entrevista, "Eu já vi varias pessoas distorcerem notícias a seu favor, apenas para criar
+um discurso de ódio contra certos grupos de pessoas, e portais de notícias ajudam a alimentar a visão dessas pessoas.", é notavel a dificulade dos leitores em distinguir notícias confiáveis, diferenciar notícias que não sofreram manipulações para agradar terceiros ou identificar notícias feitas para enganar o leitor. Entrevistados dizem presenciar o uso do meio jornalístico por terceiros em busca de certa aprovação ou covencimento, como por exemplo na politica para fazerem propagandas politicas a seu favor.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+Noticias parciais acabam afetando na vida pessoal dos leitores, como dito em nossas entrevistas "A imparcialidade impacta em diversos assuntos considerados polêmicosna visão das pessoas, muitas vezes chegando a nos odiar e nos desentendermos, por terem uma visão errada devido a pedaços de informações tiradas de contexto." levando a pessoa a acreditar em informações manipuladas para agrado politico
+
+Com o aumento de casos de manipulação de fatos e a dificuldade de encontrar noticias imparciais e de qualidade, é essencial oferecer ferramentas a aqueles que buscam noticias uma forma de serem mais críticos e ativos no consumo de notícias, de modo com que possam criar discuções e avaliar as noticias de acordo com sua propria opinião.
+
 >
 > Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 >
@@ -77,9 +75,13 @@ Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em noss
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+Nosso público-alvo são todas as pessoas interessadas em se manter bem informadas, com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+Nosso público englota todos aqueles que buscam se manter informadas, e que não gostam de depender do algoritimo lhe recomendar uma noticia, 
+
+...........
+
+
 >
 > Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
 >
@@ -95,6 +97,25 @@ Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em noss
 ## Etapa de Entendimento
 
 **✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+
+
+![image](https://github.com/user-attachments/assets/828c9cc4-cfb7-40a2-821e-4feb48002827)
+![image](https://github.com/user-attachments/assets/2778b293-e096-4979-8a4f-199c1e198e5c) <br>
+![image](https://github.com/user-attachments/assets/88f75725-1ab2-45b5-939b-90109a2c828c)
+![image](https://github.com/user-attachments/assets/d732fd78-6d32-45da-bb4c-2c7e7cb826b8) <br>
+![image](https://github.com/user-attachments/assets/21b09a24-fc70-4a0b-b864-f8e962b817c3)
+![image](https://github.com/user-attachments/assets/8998cc3c-1e0d-4f3c-8248-a4943616e6d0) <br>
+![image](https://github.com/user-attachments/assets/a4b7d449-04e4-4ea6-89cf-6c661fc925c2)
+![image](https://github.com/user-attachments/assets/8600725e-a7f6-4cce-97ab-f36364bf76bb) <br>
+![image](https://github.com/user-attachments/assets/af40a47b-2d68-4199-a3f8-543fc61cebe5)
+![image](https://github.com/user-attachments/assets/c8656425-d211-4188-914d-bf7b985ea046) <br>
+
+
+
+
+
+
+
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
