@@ -6,8 +6,9 @@ Informações básicas do projeto.
 * **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
+  * João Victor França ([https://github.com/fulano](https://github.com/Franca0118))
   * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
+  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
   * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
 
 A documentação do projeto é estruturada da seguinte forma:
@@ -24,7 +25,11 @@ A documentação do projeto é estruturada da seguinte forma:
 
 # Contexto
 
-Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
+Hoje em dia vivemos com um gigantesco excesso de informação, com isso, as notícias chegam de forma rápida e massiva por diversas fontes. Nosso projeto tem como princiapal objetivo conectar pessoas que buscam combater a parcialidade das notícias, criando um espaço onde possam se comunicar, colaborar e ajudar uns aos outros a identificar, classificar e destacar as melhores e piores informações divulgadas pela mídia.
+
+Com o aumento de casos de manipulação de fatos e a dificuldade de encontrar noticias imparciais e de qualidade, é essencial oferecer ferramentas oferecer a aqueles que buscam noticias uma forma de serem mais críticos e ativos no consumo de notícias, de modo com que possam criar discuções e avaliar as noticias de acordo com sua propria opinião.
+
+Nosso público-alvo são todas as pessoas interessadas em se manter bem informadas, com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
 
 ## Problema
 
@@ -32,7 +37,11 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+>
+>
+
+Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em nossos bolsos. Com as inúmeras fontes de notícias, o acesso às notícias acaba sendo massivo e instantâneo, com isso, passamos a enfrentar desafios, como por exemplo: distinguir notícias confiáveis, identificar notícias que não sofreram manipulações para agradar terceiros e a identificação de notícias feitas para enganar o leitor. É notavel a existencia de uma dificuldade para que os leitores possam se manter atualizados com as notícias do dia.
+
 >
 > **Orientações**:
 >
