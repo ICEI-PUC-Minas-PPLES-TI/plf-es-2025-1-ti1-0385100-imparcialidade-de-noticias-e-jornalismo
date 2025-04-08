@@ -201,11 +201,19 @@ Estes são os protótipos de telas do sistema.
 
 **✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_aa7f4a7a](https://github.com/user-attachments/assets/f2105832-9bc6-41fe-86f3-bdad77724801)
 
-Descrição para a tela XPTO
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_d7e18e90](https://github.com/user-attachments/assets/7258aca5-2eff-4bc6-8ef9-56be7c211714)
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_b3b75731](https://github.com/user-attachments/assets/fb40006a-d6be-44b0-b6e5-3a61bd9e3fe0)
+
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_93fbd6ee](https://github.com/user-attachments/assets/dc95787f-a154-4ddd-84de-2533e1f0d694)
+
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_cb13ebe5](https://github.com/user-attachments/assets/04e7517f-c89c-4741-9eb3-b4b8ee5ab2c0)
+
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_b90bba2e](https://github.com/user-attachments/assets/6610ecdc-fad3-44cc-885d-4fa9e70b5a6a)
+
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_4d765ca8](https://github.com/user-attachments/assets/7c1af644-5972-45fe-aded-b8188daf6c27)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
@@ -222,7 +230,7 @@ Descrição para a tela XPTO
 
 **✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
 
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
+![Imagem do WhatsApp de 2025-04-08 à(s) 17 21 12_3549db27](https://github.com/user-attachments/assets/4bfddca0-f439-486a-b586-e1d357c4290c)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
@@ -236,9 +244,7 @@ Descrição para a tela XPTO
 
 ### Protótipo Interativo
 
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
-
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
+[✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false) (https://marvelapp.com/prototype/1c0d9j5e/screen/96993347)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
