@@ -2,15 +2,14 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** ValidNews
-* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo)
+* **Projeto:** [NOME DO PROJETO]
+* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
-  * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
-  * Guilherme d'Angelis Ribeiro Lelis
- ([GIT HUB](https://github.com/Canaranjo))
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [Guilherme d'Angelis Ribeiro Lelis](https://github.com/Canaranjo)
+  * [Carlos Eduardo Pamponet Porto Lima](https://github.com/Carlos-Eduardo-Pamponet)
+  * Francisco Teixeira de Salles Gloor
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -38,9 +37,23 @@ Imparcialidade de notícias e jornalismo
 
 Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em nossos bolsos. Com as inúmeras fontes de notícias, o acesso às notícias acaba sendo massivo e instantâneo, com isso, passamos a enfrentar desafios, como por exemplo: distinguir notícias confiáveis, identificar notícias que não sofreram manipulações para agradar terceiros e a identificação de notícias feitas para enganar o leitor. É notavel a existencia de uma dificuldade para que os leitores possam se manter atualizados com as notícias do dia.
 
+> **Orientações**:
+>
+> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
+> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+
 ## Objetivos
 
-O ValidNews é uma plataforma que possibilita o próprio leitor a avaliar sua percepção sobre o quão tendenciosa é uma notícia. Desse modo, com base nas avaliacões de leitores passados, se consegue decidir qual notícia ler sabendo que já foi julgada como “verdadeira”.
+**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+>
+> **Orientações**:
+>
+> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
@@ -51,6 +64,15 @@ Noticias parciais acabam afetando na vida pessoal dos leitores, como dito em nos
 
 Com o aumento de casos de manipulação de fatos e a dificuldade de encontrar noticias imparciais e de qualidade, é essencial oferecer ferramentas a aqueles que buscam noticias uma forma de serem mais críticos e ativos no consumo de notícias, de modo com que possam criar discuções e avaliar as noticias de acordo com sua propria opinião.
 
+>
+> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+>
+> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+>
+> **Orientações**:
+>
+> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+
 ## Público-Alvo
 
 Nosso público-alvo são todas as pessoas interessadas em se manter bem informadas, com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
@@ -59,14 +81,25 @@ Nosso público englota todos aqueles que buscam se manter informadas, e que não
 
 ...........
 
+
+>
+> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+>
+> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+>
+> **Orientações**:
+>
+> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
 # Product Discovery
 
 ## Etapa de Entendimento
 
--> Matriz CSD
+-> **Matriz CSD**
 ![image](https://github.com/user-attachments/assets/828c9cc4-cfb7-40a2-821e-4feb48002827) <br>
 
--> Mapa de stakeholders
+-> **Mapa de stakeholders**
 ![image](https://github.com/user-attachments/assets/2778b293-e096-4979-8a4f-199c1e198e5c) <br>
 
 -> Entrevistas qualitativas
@@ -110,6 +143,12 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Usuário do sistema   | Conseguir filtrar noticias com base nos meus gostos pessoais | Para não usar a plataforma somente para os conteudos bombasticos, ter como ver noticias do meu interesse pessoal, como futebol |
 | Usuário do sistema   | Editar meu perfil | Para que eu possa  |
 
+>
+> **Orientações**:
+>
+> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
+> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+
 ## Proposta de Valor
 
 ##### Proposta para Persona Gabriel
@@ -141,7 +180,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-| ID      | Descrição do Requisito                                                              | 
+| ID     | Descrição do Requisito                                   | Prioridade |
+| ------ | ---------------------------------------------------------- | ---------- |
 | RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA     |
 | RNF-002 | Deve processar requisições do usuário em no máximo 3s | BAIXA      |
 | RNF-003 | O sistema deve ter um layout agradavel ao usuario | MEDIA      |
@@ -157,34 +197,58 @@ Estes são os protótipos de telas do sistema.
 
 **✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
 
-Tela de Login ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_aa7f4a7a](https://github.com/user-attachments/assets/f2105832-9bc6-41fe-86f3-bdad77724801)
+##### TELA XPTO ⚠️ EXEMPLO ⚠️
 
-Página Principal 
-![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_d7e18e90](https://github.com/user-attachments/assets/7258aca5-2eff-4bc6-8ef9-56be7c211714)
+Descrição para a tela XPTO
 
-Página de resultado de Pesquisa
-![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_b3b75731](https://github.com/user-attachments/assets/fb40006a-d6be-44b0-b6e5-3a61bd9e3fe0)
+![Exemplo de wireframe](images/exemplo-wireframe.png)
 
-Página com as notícias Tendenciosas ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_93fbd6ee](https://github.com/user-attachments/assets/dc95787f-a154-4ddd-84de-2533e1f0d694)
-
-Página com as notícias mais vistas ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_cb13ebe5](https://github.com/user-attachments/assets/04e7517f-c89c-4741-9eb3-b4b8ee5ab2c0)
-
-Página do Fórum para os úsuarios conversarem ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_b90bba2e](https://github.com/user-attachments/assets/6610ecdc-fad3-44cc-885d-4fa9e70b5a6a)
-
-Página da Notícia
-![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_4d765ca8](https://github.com/user-attachments/assets/7c1af644-5972-45fe-aded-b8188daf6c27)
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
+>
+> **Orientações**:
+>
+> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
+> - [Figma](https://www.figma.com/)
+> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
+> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
 
 ### User Flow
 
-![Imagem do WhatsApp de 2025-04-08 à(s) 17 21 12_3549db27](https://github.com/user-attachments/assets/4bfddca0-f439-486a-b586-e1d357c4290c)
+**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
+
+![Exemplo de fluxo de telas](images/exemplo-userflow.png)
+
+> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+>
+> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+>
+> **Orientações**:
+>
+> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
+> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
+> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 ### Protótipo Interativo
 
-Protótipo interativo Marvelapp (https://marvelapp.com/prototype/1c0d9j5e/screen/96993347) 
+✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/1c0d9j5e)
 
-# Metodologia
+# Metodologia  
 
-Detalhes sobre a organização do grupo e o ferramental empregado.
+O grupo utilizou da plataforma Miro para organizar o Processo de Design Thinking, onde ergueu o problema que seu projeto buscava solucionar, a Parcialidade nas Notícias.  
+
+Dúvidas, Certezas e Suposições foram erguidas, assim como foi criado um mapa de stakeholders para sabermos quem influenciaria o problema. Logo após uma série de entrevistas curstas foram conduzidas ao que foi identificado como Público Alvo, totalizando pouco mais de 11 entrevistados.  
+
+As falas mais signifcativas dos entrevistados, assim como os aspectos de maior importância, os principais temas e aprendizados e também novos tópicos para explorar no futuro foram erguidos com base na informação coletada.  
+
+A seguir, 4 Personas fictícias foram criadas, baseadas no perfil de alguns dos entrevistados. Uma ideia geral e resumida de suas vidas foi descrita, suas posses relevantes ao problema, e seus objetivos em alcançar uma soluição ao problema. Quais os compromissos que limitam essa pessoa a resolver o problema, quais complicações surgem desses compromissos, e quais seriam os ganhos advindos de solucionar o problema da parcialidade das notícias também foi informada em _bulletpoints_.  
+Os _devs_ imaginaram como os leitores viriam a solucionar o problema pelo método de História de Usuários. Cada necessidade foi listada separadamente assim como seu objetivo.  
+Após isso, cada _dev_ propôs uma solução que atenderia à todas essas tarefas. Subsequentemente, cada solução foi incrementada pelo _dev_ adjacente, totalizando 4 soluções possíveis que foram expandindas em 6 posteriormente.  
+Essas soluções foram descritas em mural de possiblidades, e detalhadas e um pequeno parágrafo. Um Plano Cartesiano foi construído para posicionar as soluções em termos de impacto e custo, onde foi decidido que um **Site de Recomendações** seria a solução que o grupo desenvolveria, por seu baixo custo e alto impacto.  
+O Grupo então se reuniu na ferramento do Github. Onde a documentação do projeto foi escrita no modelo que vê aqui. Foi transcrita uma [descrição simples do problema](README.md#problema), o [Objetivo do Projeto](README.md#objetivos), a [razão pelo desenvolvimento do projeto](README.md#justificativa) e seu [Público Alvo](README.md#público-alvo).  
+As [Especificações do Projeto](README.md#requisitos) foram detalhadas por [João](https://github.com/Franca0118) com base nas [Histórias de Usuário](README.md#histórias-de-usuários) e uma proposta de site foi elaborada por [Carlos](https://github.com/Carlos-Eduardo-Pamponet) com uma sequência de [Userflow](README.md#user-flow), uma proposta de [Wireframe](README.md#wireframes), e um [Protótipo Interativo](https://marvelapp.com/prototype/1c0d9j5e).  
+Então, o grupo se dividiu para desenvolver o site utilizando a metodologia Sprint. O backlog do produto foi construído com base nos requisitos e o controle de tarefas foi realizado na plataforma Trello por via de um quadro Kanban.  
 
 ## Ferramentas
 
@@ -192,24 +256,19 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/        |
-| Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo      |
-| Hospedagem do site          | Render     |  |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e/screen/96993347   |
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/           |
+| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo     |
+| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
+| Protótipo Interativo        | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e            |
 |                             |            |                                                    |
 
 ## Gerenciamento do Projeto
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
 
-![Exemplo de Kanban](images/exemplo-kanban.png)
+![Kanban Trello](images/implementado/Kanban.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
->
+
 > **Orientações**:
 >
 > - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
@@ -329,7 +388,7 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 As referências utilizadas no trabalho foram:
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
+* Nenhuma referência no momento.
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
@@ -339,3 +398,4 @@ As referências utilizadas no trabalho foram:
 >
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
 > - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+
