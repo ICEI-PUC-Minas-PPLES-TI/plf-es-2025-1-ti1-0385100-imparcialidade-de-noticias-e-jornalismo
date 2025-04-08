@@ -53,11 +53,7 @@ Com o aumento de casos de manipulação de fatos e a dificuldade de encontrar no
 
 ## Público-Alvo
 
-Nosso público-alvo são todas as pessoas interessadas em se manter bem informadas, com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
-
-Nosso público englota todos aqueles que buscam se manter informadas, e que não gostam de depender do algoritimo lhe recomendar uma noticia, 
-
-...........
+Nosso público-alvo são todas as aquelas pessoas interessadas em se manter bem informadas com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
 
 # Product Discovery
 
