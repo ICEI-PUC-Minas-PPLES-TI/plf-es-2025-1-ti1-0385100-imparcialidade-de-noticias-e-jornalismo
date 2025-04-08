@@ -8,7 +8,8 @@ Informações básicas do projeto.
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
   * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
-  * [Cicrano] ([GIT HUB](https://github.com/Canaranjo)
+  * Guilherme d'Angelis Ribeiro Lelis
+ ([GIT HUB](https://github.com/Canaranjo))
   * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
 
 A documentação do projeto é estruturada da seguinte forma:
