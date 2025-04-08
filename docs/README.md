@@ -3,7 +3,7 @@
 Informações básicas do projeto.
 
 * **Projeto:** ValidNews
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo/tree/master)
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
