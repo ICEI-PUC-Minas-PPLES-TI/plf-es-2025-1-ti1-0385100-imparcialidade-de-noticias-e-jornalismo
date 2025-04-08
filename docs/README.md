@@ -44,7 +44,7 @@ O ValidNews é uma plataforma que possibilita o próprio leitor a avaliar sua pe
 
 ## Justificativa
 
-Como observado nas entrevista, "Eu já vi varias pessoas distorcerem notícias a seu favor, apenas para criar
+Como observado nas entrevistas, "Eu já vi varias pessoas distorcerem notícias a seu favor, apenas para criar
 um discurso de ódio contra certos grupos de pessoas, e portais de notícias ajudam a alimentar a visão dessas pessoas.", é notavel a dificulade dos leitores em distinguir notícias confiáveis, diferenciar notícias que não sofreram manipulações para agradar terceiros ou identificar notícias feitas para enganar o leitor. Entrevistados dizem presenciar o uso do meio jornalístico por terceiros em busca de certa aprovação ou covencimento, como por exemplo na politica para fazerem propagandas politicas a seu favor.
 
 Noticias parciais acabam afetando na vida pessoal dos leitores, como dito em nossas entrevistas "A imparcialidade impacta em diversos assuntos considerados polêmicosna visão das pessoas, muitas vezes chegando a nos odiar e nos desentendermos, por terem uma visão errada devido a pedaços de informações tiradas de contexto." levando a pessoa a acreditar em informações manipuladas para agrado politico
