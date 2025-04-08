@@ -9,7 +9,7 @@ Informações básicas do projeto.
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
   * [Guilherme d'Angelis Ribeiro Lelis](https://github.com/Canaranjo)
   * [Carlos Eduardo Pamponet Porto Lima](https://github.com/Carlos-Eduardo-Pamponet)
-  * Francisco Teixeira de Salles Gloor
+  * [Francisco Teixeira de Salles Gloor](https://github.com/FGloor)
 
 
 A documentação do projeto é estruturada da seguinte forma:
