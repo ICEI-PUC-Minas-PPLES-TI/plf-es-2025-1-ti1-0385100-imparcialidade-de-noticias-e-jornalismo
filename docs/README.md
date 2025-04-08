@@ -2,15 +2,15 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** ValidNews
-* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo)
+* **Projeto:** [NOME DO PROJETO]
+* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
-  * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
-  * Guilherme d'Angelis Ribeiro Lelis
- ([GIT HUB](https://github.com/Canaranjo))
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [Guilherme d'Angelis Ribeiro Lelis](https://github.com/Canaranjo)
+  * [Carlos Eduardo Pamponet Porto Lima](https://github.com/Carlos-Eduardo-Pamponet)
+  * Francisco Teixeira de Salles Gloor
+
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -180,11 +180,22 @@ Página da Notícia
 
 ### Protótipo Interativo
 
-Protótipo interativo Marvelapp (https://marvelapp.com/prototype/1c0d9j5e/screen/96993347) 
+[Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/1c0d9j5e)
 
 # Metodologia
+O grupo utilizou da plataforma Miro para organizar o Processo de Design Thinking, onde ergueu o problema que seu projeto buscava solucionar, a Parcialidade nas Notícias.  
 
-Detalhes sobre a organização do grupo e o ferramental empregado.
+Dúvidas, Certezas e Suposições foram erguidas, assim como foi criado um mapa de stakeholders para sabermos quem influenciaria o problema. Logo após uma série de entrevistas curstas foram conduzidas ao que foi identificado como Público Alvo, totalizando pouco mais de 11 entrevistados.  
+
+As falas mais signifcativas dos entrevistados, assim como os aspectos de maior importância, os principais temas e aprendizados e também novos tópicos para explorar no futuro foram erguidos com base na informação coletada.  
+
+A seguir, 4 Personas fictícias foram criadas, baseadas no perfil de alguns dos entrevistados. Uma ideia geral e resumida de suas vidas foi descrita, suas posses relevantes ao problema, e seus objetivos em alcançar uma soluição ao problema. Quais os compromissos que limitam essa pessoa a resolver o problema, quais complicações surgem desses compromissos, e quais seriam os ganhos advindos de solucionar o problema da parcialidade das notícias também foi informada em _bulletpoints_.  
+Os _devs_ imaginaram como os leitores viriam a solucionar o problema pelo método de História de Usuários. Cada necessidade foi listada separadamente assim como seu objetivo.  
+Após isso, cada _dev_ propôs uma solução que atenderia à todas essas tarefas. Subsequentemente, cada solução foi incrementada pelo _dev_ adjacente, totalizando 4 soluções possíveis que foram expandindas em 6 posteriormente.  
+Essas soluções foram descritas em mural de possiblidades, e detalhadas e um pequeno parágrafo. Um Plano Cartesiano foi construído para posicionar as soluções em termos de impacto e custo, onde foi decidido que um **Site de Recomendações** seria a solução que o grupo desenvolveria, por seu baixo custo e alto impacto.  
+O Grupo então se reuniu na ferramento do Github. Onde a documentação do projeto foi escrita no modelo que vê aqui. Foi transcrita uma [descrição simples do problema](README.md#problema), o [Objetivo do Projeto](README.md#objetivos), a [razão pelo desenvolvimento do projeto](README.md#justificativa) e seu [Público Alvo](README.md#público-alvo).  
+As [Especificações do Projeto](README.md#requisitos) foram detalhadas por [João](https://github.com/Franca0118) com base nas [Histórias de Usuário](README.md#histórias-de-usuários) e uma proposta de site foi elaborada por [Carlos](https://github.com/Carlos-Eduardo-Pamponet) com uma sequência de [Userflow](README.md#user-flow), uma proposta de [Wireframe](README.md#wireframes), e um [Protótipo Interativo](https://marvelapp.com/prototype/1c0d9j5e).  
+Então, o grupo se dividiu para desenvolver o site utilizando a metodologia Sprint. O backlog do produto foi construído com base nos requisitos e o controle de tarefas foi realizado na plataforma Trello por via de um quadro Kanban.  
 
 ## Ferramentas
 
@@ -192,31 +203,17 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/        |
-| Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo      |
-| Hospedagem do site          | Render     |  |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e/screen/96993347   |
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/           |
+| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo     |
+| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX  |
+| Protótipo Interativo        | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e            |
 |                             |            |                                                    |
 
 ## Gerenciamento do Projeto
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
 
-![Exemplo de Kanban](images/exemplo-kanban.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
->
-> **Orientações**:
->
-> - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-> - [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-> - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+![Kanban Trello](images/implementado/Kanban.png)
 
 # Solução Implementada
 
