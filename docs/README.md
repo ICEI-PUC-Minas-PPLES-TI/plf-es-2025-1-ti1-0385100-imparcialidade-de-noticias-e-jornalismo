@@ -244,7 +244,7 @@ Estes são os protótipos de telas do sistema.
 
 ### Protótipo Interativo
 
-[✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false) (https://marvelapp.com/prototype/1c0d9j5e/screen/96993347)
+Protótipo interativo Marvelapp (https://marvelapp.com/prototype/1c0d9j5e/screen/96993347) 
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
