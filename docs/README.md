@@ -3,7 +3,7 @@
 Informações básicas do projeto.
 
 * **Projeto:** ValidNews
-* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo/tree/master)
+* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo)
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
@@ -192,10 +192,10 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/XXXXXXX ⚠️ EXEMPLO ⚠️        |
-| Repositório de código     | GitHub     | https://github.com/XXXXXXX ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/        |
+| Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo      |
+| Hospedagem do site          | Render     |  |
+| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e/screen/96993347   |
 |                             |            |                                                    |
 
 ## Gerenciamento do Projeto
