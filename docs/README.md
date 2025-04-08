@@ -7,7 +7,7 @@ Informações básicas do projeto.
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
+  * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
   * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
   * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
 
