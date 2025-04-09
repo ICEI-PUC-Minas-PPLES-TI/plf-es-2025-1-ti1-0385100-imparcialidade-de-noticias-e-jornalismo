@@ -151,8 +151,6 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
-
 Tela de Login ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_aa7f4a7a](https://github.com/user-attachments/assets/f2105832-9bc6-41fe-86f3-bdad77724801)
 
 Página Principal 
