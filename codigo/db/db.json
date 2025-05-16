@@ -2,16 +2,65 @@
   "noticias": [
     {
       "id": 1,
-      "data": "2025-02-17",
-      "titulo": "3 anos de guerra",
-      "thumb": "ucrania.webm",
+      "data": "14/05/2025",
+      "titulo": "Bolasie",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
       "categoria_id": 1,
-      "texto": "texto completo sobre Guerra",
-      "autor": "Adalcino Junior",
-      "fonte": "G1 News",
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Gabriel",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Kaio",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Mbappe",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Cruzeiro",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
       "created_at": "2025-02-27",
       "updated_at": null
     }
+
   ],
   "categorias": [
     {
