@@ -1,0 +1,275 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Bolasie",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Gabriel",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Kaio",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Mbappe",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    },
+    {
+      "id": 1,
+      "data": "14/05/2025",
+      "titulo": "Cruzeiro",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria_id": 1,
+      "texto": "Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "./detalhes?id=2",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    }
+
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Geopolítica",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    }
+  ],
+  "fontes": [
+    {
+      "id": 1,
+      "noticia_id": 1,
+      "nome": "G1 News",
+      "url": "https://g1.globo.com/"
+    }
+  ],
+  "autor": [
+    {
+      "id": 1,
+      "noticia_id": 1,
+      "nome": "Adalcino Junior",
+      "biografia": "curta descrição da biografia do autor",
+      "created_at": "2025-02-27",
+      "updated_at": null
+    }
+  ],
+  "engajamentos": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "noticia_id": 1,
+      "tipo": "like",
+      "valor": 1
+    },
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "noticia_id": 1,
+      "tipo": "dislike",
+      "valor": 0
+    }
+  ],
+  "tendencias": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "noticia_id": 1,
+      "data": "2025-02-26",
+      "tipo": "tendencioso",
+      "valor": 1
+    },
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "noticia_id": 1,
+      "data": "2025-02-26",
+      "tipo": "não tendencioso",
+      "valor": 0
+    }
+  ],
+  "noticias_salvas": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "noticia_id": 1,
+      "saved_at": "2025-02-27"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "noticia_id": 1,
+      "texto": "comentário exemplo",
+      "data": "2025-02-26"
+    }
+  ],
+  "engajamento_comentarios": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "comentario_id": 1,
+      "tipo": "like",
+      "valor": 1
+    },
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "comentario_id": 1,
+      "tipo": "dislike",
+      "valor": 0
+    }
+  ],
+  "notificacoes": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "type": "comment_reply",
+      "content": "Alguém respondeu seu comentário",
+      "read": false,
+      "created_at": "2025-02-27"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Edislav97",
+      "email": "esdislau997@webmail.com",
+      "tipo": "usuario",
+      "senha": "m73mPAjvhc&5Aai#8y7^",
+      "avatar": "https://example.com/avatar1.jpg",
+      "bio": "Desenvolvedor de software e entusiasta de tecnologia.",
+      "created_at": "2025-02-26",
+      "updated_at": null
+    },
+    {
+      "id": 2,
+      "nome": "Jumberto dos Santos",
+      "email": "jumberto.sa.ntos@email.com",
+      "tipo": "moderador_forum",
+      "senha": "k8ans&3905m¨Gsh^",
+      "avatar": "https://example.com/avatar2.jpg",
+      "bio": "Entusiasta de tecnologia e notícias.",
+      "created_at": "2025-01-10",
+      "updated_at": null
+    },
+    {
+      "id": 3,
+      "nome": "11011111",
+      "email": null,
+      "tipo": "admin",
+      "senha": "03s;lk&W)2#$Ç@P9O%Ni",
+      "avatar": null,
+      "bio": null,
+      "created_at": "2024-12-10",
+      "updated_at": null
+    }
+  ],
+  "forum_canais": [
+    {
+      "id": 1,
+      "nome": "G1 News",
+      "descricao": "Discussões sobre G1",
+      "data_criacao": "2025-02-26",
+      "tipo": "publico",
+      "moderador_forum_id": 2,
+	  "created_at": "2024-12-10",
+      "updated_at": null
+    }
+  ],
+  "forum_mensagens": [
+    {
+      "id": 1,
+      "usuario_id": 1,
+      "mensagem_id": null,
+      "canal_id": 1,
+      "texto": "Mensagem de exemplo",
+      "data": "2025-02-26",
+      "hora": "9:00"
+    },
+    {
+      "id": 2,
+      "usuario_id": 1,
+      "mensagem_id": 1,
+      "canal_id": 1,
+      "texto": "mensagem de resposta exemplo",
+      "data": "2025-02-27",
+      "hora": "10:00"
+    }
+  ],
+  "media": [
+    {
+      "id": 1,
+      "type": "imagem",
+      "url": "https://example.com/image.jpg",
+      "uploaded_by_usuario_id": 1,
+      "created_at": "2025-02-27"
+    }
+  ],
+  "noticias_media": [
+    {
+      "id": 1,
+      "noticia_id": 1,
+      "media_id": 1
+    }
+  ],
+  "comentarios_media": [
+    {
+      "id": 1,
+      "commentario_id": 1,
+      "media_id": 1
+    }
+  ],
+  "forum_mensagens_media": [
+	{
+	  "id": 1,
+	  "mensagem_id": 1,
+	  "media_id": 1
+	}
+  ],
+  "audit_logs": [
+    {
+      "id": 1,
+      "action": "edit_comment",
+      "performed_by_usuario_id": 1,
+      "target_id": 1,
+      "target_type": "comment",
+      "performed_at": "2025-02-27"
+    }
+  ]
+}
