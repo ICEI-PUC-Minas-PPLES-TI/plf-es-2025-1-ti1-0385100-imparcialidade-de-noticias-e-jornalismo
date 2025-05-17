@@ -19,70 +19,70 @@ function displayMessage(mensagem) {
     msg.innerHTML = '<div class="alert alert-warning">' + mensagem + '</div>';
 }
 
-function readContato(processaDados) {
+function readNoticia(processaDados) {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             processaDados(data);
         })
         .catch(error => {
-            console.error('Erro ao ler contatos via API JSONServer:', error);
-            displayMessage("Erro ao ler contatos");
+            console.error('Erro ao cadastrar a noticia via API JSONServer:', error);
+            displayMessage("Erro ao cadastrar a noticia");
         });
 }
 
-function createContato(contato, refreshFunction) {
+function createNoticia(noticia, refreshFunction) {
     fetch(apiUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(contato),
+        body: JSON.stringify(noticia),
     })
         .then(response => response.json())
         .then(data => {
-            displayMessage("Contato inserido com sucesso");
+            displayMessage("Noticia inserida com sucesso");
             if (refreshFunction)
                 refreshFunction();
         })
         .catch(error => {
-            console.error('Erro ao inserir contato via API JSONServer:', error);
-            displayMessage("Erro ao inserir contato");
+            console.error('Erro ao inserir noticia via API JSONServer:', error);
+            displayMessage("Erro ao inserir noticia");
         });
 }
 
-function updateContato(id, contato, refreshFunction) {
+function updateNoticia(id, noticia, refreshFunction) {
     fetch(`${apiUrl}/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(contato),
+        body: JSON.stringify(noticia),
     })
         .then(response => response.json())
         .then(data => {
-            displayMessage("Contato alterado com sucesso");
+            displayMessage("Noticia alterada com sucesso");
             if (refreshFunction)
                 refreshFunction();
         })
         .catch(error => {
-            console.error('Erro ao atualizar contato via API JSONServer:', error);
-            displayMessage("Erro ao atualizar contato");
+            console.error('Erro ao atualizar noticia via API JSONServer:', error);
+            displayMessage("Erro ao atualizar noticia");
         });
 }
 
-function deleteContato(id, refreshFunction) {
+function deleteNoticia(id, refreshFunction) {
     fetch(`${apiUrl}/${id}`, {
         method: 'DELETE',
     })
         .then(response => response.json())
         .then(data => {
-            displayMessage("Contato removido com sucesso");
+            displayMessage("Noticia removida com sucesso");
             if (refreshFunction)
                 refreshFunction();
         })
         .catch(error => {
-            console.error('Erro ao remover contato via API JSONServer:', error);
-            displayMessage("Erro ao remover contato");
+            console.error('Erro ao remover noticia via API JSONServer:', error);
+            displayMessage("Erro ao remover noticia");
         });
 }
