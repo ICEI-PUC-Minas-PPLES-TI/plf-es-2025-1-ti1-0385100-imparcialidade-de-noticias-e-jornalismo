@@ -19,18 +19,37 @@
         </ul>
         <span>
             <img src="./assets/images/search_icon.png">
-            <input type="text" name="" id="idTesteParaAPesquisa">
+            <input type="text" name="" id="pesquisa">
         </span>
     </header>
 
     <main>
-    <button>
+    <button id="botaoFiltros">
         <img src="./assets/images/filter_icon.png">
         <h3>Filtros</h3>
     </button>
 
-    <div id="noticias">
-    </div>
+    <div id="noticias"></div>
 </main>
+
+
+<div id="filtros">
+    <Button id="botaoFechar">Fechar</Button>
+    <span>
+            <label for="de_input">De:</label>
+            <Input type="date" id="de_input"/>
+            <label for="ate_input">Ate:</label>
+            <Input type="date" id="ate_input"/>
+       
+    </span>
+    <h6>Ordernar Por:</h6>
+    <Button id="botaoRelevancia">Relevancia</Button>
+    <Button id="botaoRecentes">Recentes <img src="./assets/images/down_arrow.png"></Button>
+    <Button id="botaoAntigas">Antigas <img src="./assets/images/up_arrow.png"></Button>
+    <Button id="botaoMaisAvaliadas">Mais Avaliadas <img src="./assets/images/down_arrow.png"></Button>
+    <Button id="botaoMenosAvaliadas">Menos Avaliadas <img src="./assets/images/up_arrow.png"></Button>
+    <Button id="botaoNotasdescrescente">Notas descrescente <img src="./assets/images/down_arrow.png"></Button>
+    <Button id="botaoNotascresncente">Notas cresncente <img src="./assets/images/up_arrow.png	"></Button>
+</div>
 </body>
 </html>
