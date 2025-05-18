@@ -16,8 +16,8 @@
     <header>
         <ul>
             <li>Valid News</li>
-            <li>TENTENCIAS</li>
-            <li>RELEVANCIA</li>
+            <li>TENTÊNCIAS</li>
+            <li>RELEVÂNCIA</li>
             <li>FORUM</li>
         </ul>
         <span>
@@ -63,13 +63,13 @@
             <div class="form-group row">
                 <div class="col-sm-12">
                     <label for="inputTexto">Descrição:</label>
-                    <input type="text" class="form-control" id="inputTexto">
+                    <textarea name="inputTexto" class="form-control" id="inputTexto"></textarea>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-9">
                     <label for="inputFonte">Fonte:</label>
                     <input type="text" class="form-control" id="inputFonte" >
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <label for="inputCategoria">Categoria:</label>
                     <input type="text" class="form-control" id="inputCategoria">
                 </div>
@@ -131,7 +131,7 @@
                                                     <td>${noticia.titulo}</td>
                                                     <td>${noticia.data}</td>
                                                     <td>${noticia.autor}</td>
-                                                    <td>${noticia.imagem}</td>
+                                                    <td>${noticia.thumb}</td>
                                                     <td>${noticia.texto}</td>
                                                     <td>${noticia.fonte}</td>
                                                     <td>${noticia.categoria}</td>

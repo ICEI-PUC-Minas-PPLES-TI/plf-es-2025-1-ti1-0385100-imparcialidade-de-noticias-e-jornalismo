@@ -1,16 +1,14 @@
 {
   "noticias": [
     {
-      "id": 1,
       "data": "2025-02-17",
       "titulo": "3 anos de guerra",
-      "thumb": "ucrania.webm",
-      "categoria_id": 1,
+      "thumb": "https://stackoverflow.com/questions/7545302/how-can-the-size-of-an-input-text-box-be-defined-in-html",
+      "categoria": "1",
       "texto": "texto completo sobre Guerra",
       "autor": "Adalcino Junior",
       "fonte": "G1 News",
-      "created_at": "2025-02-27",
-      "updated_at": null
+      "id": 1
     }
   ],
   "categorias": [

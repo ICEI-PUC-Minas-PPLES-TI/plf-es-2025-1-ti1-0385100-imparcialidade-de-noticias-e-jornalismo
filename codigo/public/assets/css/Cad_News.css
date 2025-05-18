@@ -11,60 +11,53 @@
 }
 
 label {
-    font-weight: bolder;
-  }
-  ::placeholder {
-    color: lightskyblue !important;
-    opacity: 3;
-  }
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:  lightskyblue !important;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:  lightskyblue !important;
-    opacity:  3;
-  }
-  #msg {
-     height: 60px;
-  }
-  #grid-contatos tbody {
-     cursor: pointer;
-  }
-  #botoes{
-    padding-top: 13px;
-  }
-  #inputTexto{
-    height: 150px;
-  }
+  font-weight: bolder;
+  margin-top: 5px;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+#msg {
+  height: 60px;
+  padding-top: 10px;
+}
+#grid-contatos tbody {
+  cursor: pointer;
+}
+#botoes{
+  margin-top: 13px;
+}
+
+#inputTexto{
+  height: 150px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 header ul {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
 }
 
 header li:first-child {
-    font-weight: bold;
-    font-size: 2rem;
-    margin-right: 30px;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 30px;
 }
 
 header li {
@@ -72,7 +65,7 @@ header li {
 }
 
 header li:hover {
-    color: blue;
+  color: blue;
 }
 header li:first-child:hover {
   color: black;
@@ -80,8 +73,8 @@ header li:first-child:hover {
 
 header input {
   padding: 5px 10px;
-   border-radius: 15px;
-   border: 1px solid #ccc;
+  border-radius: 15px;
+  border: 1px solid #ccc;
 }
 #search{
   width: 23px;
