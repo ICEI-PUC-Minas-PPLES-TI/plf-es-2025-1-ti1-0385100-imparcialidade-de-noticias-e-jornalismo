@@ -13,11 +13,14 @@ label {
     opacity:  3;
   }
   h1 {
-     text-align: center;
+    padding: 10px;
   }
   #msg {
      height: 60px;
   }
   #grid-contatos tbody {
      cursor: pointer;
+  }
+  #botoes{
+    padding-top: 13px;
   }
