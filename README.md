@@ -6,7 +6,6 @@ O ValidNews é uma plataforma que possibilita o próprio leitor a avaliar sua pe
 ## Alunos integrantes da equipe
 
 * Carlos Eduardo Pamponet Porto Lima
-* Francisco Teixeira de Salles Gloor
 * João Victor França
 * Guilherme d'Angelis Ribeiro Lelis
 
