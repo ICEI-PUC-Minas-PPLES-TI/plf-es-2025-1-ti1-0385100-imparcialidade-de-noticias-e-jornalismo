@@ -7,9 +7,8 @@ Informações básicas do projeto.
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
-  * [Guilherme d'Angelis Ribeiro Lelis](https://github.com/Canaranjo)
-  * [Carlos Eduardo Pamponet Porto Lima](https://github.com/Carlos-Eduardo-Pamponet)
-  * [Francisco Teixeira de Salles Gloor](https://github.com/FGloor)
+  * Guilherme d'Angelis Ribeiro Lelis ([GIT HUB](https://github.com/Canaranjo))
+  * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
 
 
 A documentação do projeto é estruturada da seguinte forma:
