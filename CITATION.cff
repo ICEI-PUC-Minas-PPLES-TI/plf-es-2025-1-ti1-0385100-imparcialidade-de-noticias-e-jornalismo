@@ -1,13 +1,13 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: ValidNews
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Pamponet Porto Lima
+    given-names: Carlos Eduardo 
+  - family-names: França
+    given-names: João Victor
+  - family-names: d'Angelis Ribeiro Lelis
+    given-names: Guilherme 
   - family-names: 
     given-names: 
   - family-names: 
@@ -16,16 +16,16 @@ authors:
     given-names:
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro
+    given-names: Rommel 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Silva Tavares
+    given-names: Cleiton 
 keywords:
-  - 
-  - 
-repository-code: 
+  - News
+  - Trend
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
