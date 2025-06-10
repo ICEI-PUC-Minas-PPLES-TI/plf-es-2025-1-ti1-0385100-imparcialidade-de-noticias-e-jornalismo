@@ -9,6 +9,16 @@
       "autor": "Adalcino Junior",
       "fonte": "G1 News",
       "id": 1
+    },
+    {
+      "data": "08/06/2025 11h56",
+      "titulo": "Hackers chineses e erros de usuários acendem alerta de crise de segurança cibernética nos EUA",
+      "thumb": "https://s2-g1.glbimg.com/Axmx61_7o0bdlUXYRc-ot_Kx-wA=/0x0:2916x1905/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/L/G/Wn6Jl7QNOqpfpHjMHL1w/ap25149163043530.jpg",
+      "categoria": "2",
+      "texto": "Grupos ligados a serviços de inteligência da China têm mirado os celulares de membros de áreas estratégicas da Casa Branca. Invasão sofisticada de aparelhos acontece mesmo sem que usuários acessem links.",
+      "autor": "Associated Press",
+      "fonte": "https://g1.globo.com/tecnologia/noticia/2025/06/08/hackers-chineses-e-erros-de-usuarios-acendem-alerta-de-crise-de-seguranca-cibernetica-nos-eua-entenda.ghtml",
+      "id": 2
     }
   ],
   "categorias": [
