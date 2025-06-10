@@ -23,7 +23,7 @@ function cardNoticia(id ,titulo, descricao, thumb, data, mediaAvaliacoes){
     return `<a href="./detalhes?id=${id}"><div class="noticia">
             <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
-                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="./assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
+                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
                 <p>${descricao}</p>
                 <p style="font-size: 0.8rem; color: gray;">${data}</p>
             </div>
