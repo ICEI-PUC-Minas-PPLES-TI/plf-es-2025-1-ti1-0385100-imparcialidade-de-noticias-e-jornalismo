@@ -33,13 +33,13 @@ header ul {
     gap: 20px;
 }
 
-header li:first-child {
+header a:first-child {
     font-weight: bold;
     font-size: 2rem;
     margin-right: 30px;
 }
 
-header li {
+header a {
     cursor: pointer;
 }
 

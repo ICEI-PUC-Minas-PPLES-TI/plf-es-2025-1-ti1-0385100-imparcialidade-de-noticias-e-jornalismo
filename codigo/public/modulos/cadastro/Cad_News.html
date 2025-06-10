@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desenvolvimento de Interfaces Web | Cadastro de Contatos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/css/Cad_News.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <ul>
+            <a href="../../index.html"><li>Valid News</li></a>
+            <li>TENTÊNCIAS</li>
+            <li>RELEVÂNCIA</li>
+            <li>FORUM</li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Noticia não encontrado.</div>-->
+            </div>
+        </div>
+
+        <form id="form-noticia">
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <label for="inputTitulo">Titulo:</label>
+                    <input type="text" class="form-control" id="inputTitulo">
+                </div>
+                <div class="col-sm-2">
+                    <label for="inputData">Data:</label>
+                    <input type="text" class="form-control" id="inputData">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="inputAutor">Autor:</label>
+                    <input type="text" class="form-control" id="inputAutor">
+                </div>
+                <div class="col-sm-7">
+                    <label for="inputImagem">Imagem:</label>
+                    <input type="text" class="form-control" id="inputImagem">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <label for="inputTexto">Descrição:</label>
+                    <textarea name="inputTexto" class="form-control" id="inputTexto"></textarea>
+                </div>
+                <div class="col-sm-9">
+                    <label for="inputFonte">Fonte:</label>
+                    <input type="text" class="form-control" id="inputFonte" >
+                </div>
+                <div class="col-sm-3">
+                    <label for="inputCategoria">Categoria:</label>
+                    <input type="text" class="form-control" id="inputCategoria">
+                </div>
+            </div>
+            <div class="form-group row" id="botoes">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                    <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                    <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                    <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-noticias" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Fonte</th>
+                            <th scope="col">Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-noticias">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/Cad_News.js"></script>
+    <script>
+        function exibeNoticias() {
+            tableNoticias = document.getElementById("table-noticias");
+
+            // Remove todas as linhas do corpo da tabela
+            tableNoticias.innerHTML = "";
+
+            readNoticia (dados => {
+                // Popula a tabela com os registros do banco de dados
+                for (i = 0; i < dados.length; i++) {
+                    let noticia = dados[i];    
+                    tableNoticias.innerHTML += `<tr><td scope="row">${noticia.id}</td>
+                                                    <td>${noticia.titulo}</td>
+                                                    <td>${noticia.data}</td>
+                                                    <td>${noticia.autor}</td>
+                                                    <td>${noticia.thumb}</td>
+                                                    <td>${noticia.texto}</td>
+                                                    <td>${noticia.fonte}</td>
+                                                    <td>${noticia.categoria}</td>
+                                                </tr>`;
+                }
+            })
+        }
+
+        function init() {
+            // Define uma variável para o formulário de contato
+            formNoticia = document.getElementById("form-noticia");
+
+            // Adiciona funções para tratar os eventos 
+            btnInsert = document.getElementById("btnInsert");
+            btnInsert.addEventListener ('click', function () {
+                // Verifica se o formulário está preenchido corretamente
+                if (!formNoticia.checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoTitulo = document.getElementById ('inputTitulo').value;
+                let campoTexto = document.getElementById ('inputTexto').value;
+                let campoAutor = document.getElementById ('inputAutor').value;
+                let campoFonte = document.getElementById ('inputFonte').value;
+                let campoCategoria = document.getElementById ('inputCategoria').value;
+                let campoImagem = document.getElementById ('inputImagem').value;
+                let campoData = document.getElementById ('inputData').value;
+
+                // Cria um objeto com os dados do contato
+                let noticia = { data: campoData, 
+                    titulo: campoTitulo, 
+                    thumb: campoImagem, 
+                    categoria: campoCategoria, 
+                    texto: campoTexto,
+                    autor: campoAutor,
+                    fonte: campoFonte };
+
+                // Cria o contato no banco de dados
+                createNoticia(noticia, exibeNoticias);
+
+                // Limpa o formulario
+                formNoticia.reset()
+            });
+
+            // Trata o click do botão Alterar
+            btnUpdate = document.getElementById("btnUpdate");
+            btnUpdate.addEventListener ('click', function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = document.getElementById("inputId").value;
+                if (campoId == "") {
+                    displayMessage("Selecione antes uma noticia para ser alterada.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoTitulo = document.getElementById ('inputTitulo').value;
+                let campoTexto = document.getElementById ('inputTexto').value;
+                let campoAutor = document.getElementById ('inputAutor').value;
+                let campoFonte = document.getElementById ('inputFonte').value;
+                let campoCategoria = document.getElementById ('inputCategoria').value;
+                let campoImagem = document.getElementById ('inputImagem').value;
+                let campoData = document.getElementById ('inputData').value;
+
+                // Cria um objeto com os dados do contato
+                let noticia = { data: campoData, 
+                    titulo: campoTitulo, 
+                    thumb: campoImagem, 
+                    categoria: campoCategoria, 
+                    texto: campoTexto,
+                    autor: campoAutor,
+                    fonte: campoFonte };
+
+                // Altera o contato no banco de dados
+                updateNoticia(parseInt(campoId), noticia, exibeNoticias);
+
+                // Limpa o formulario
+                formNoticia.reset()
+            });
+
+            // Trata o click do botão Excluir
+            btnDelete = document.getElementById('btnDelete');
+            btnDelete.addEventListener ('click', function () {
+                let campoId = document.getElementById('inputId').value;
+                if (campoId == "") {
+                    displayMessage("Selecione uma noticia a ser excluída.");
+                    return;
+                }
+
+                // Exclui o contato no banco de dados
+                deleteNoticia(parseInt(campoId), exibeNoticias);
+
+                // Limpa o formulario
+                formNoticia.reset()
+            });
+
+            // Trata o click do botão Listar Contatos
+            btnClear = document.getElementById('btnClear');
+            btnClear.addEventListener ('click', function () {                
+                formNoticia.reset()
+            });
+
+            // Oculta a mensagem de aviso após alguns 5 segundos
+            msg = document.getElementById('msg');
+            msg.addEventListener ("DOMSubtreeModified", function (e) {
+                if (e.target.innerHTML == "") return;
+                setTimeout (function () {
+                    alert = msg.getElementsByClassName("alert");
+                    alert[0].remove();
+                }, 5000);
+            })
+
+            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+            gridNoticias = document.getElementById("grid-noticias");
+            gridNoticias.addEventListener('click', function (e) {
+                if (e.target.tagName == "TD") { 
+
+                    // Obtem as colunas da linha selecionada na tabela
+                    let linhaNoticia = e.target.parentNode;
+                    colunas = linhaNoticia.querySelectorAll("td");
+
+                    // Preenche os campos do formulário com os dados da linha selecionada na tabela
+                    document.getElementById ('inputId').value = colunas[0].innerText;
+                    document.getElementById ('inputTitulo').value = colunas[1].innerText;
+                    document.getElementById ('inputData').value = colunas[2].innerText;
+                    document.getElementById ('inputAutor').value = colunas[3].innerText;
+                    document.getElementById ('inputImagem').value = colunas[4].innerText;
+                    document.getElementById ('inputTexto').value = colunas[5].innerText;
+                    document.getElementById ('inputFonte').value = colunas[6].innerText;
+                    document.getElementById ('inputCategoria').value = colunas[7].innerText;
+                    
+                    
+                }
+            });
+
+            exibeNoticias();
+        }
+    </script>
+</body>
+
+</html>

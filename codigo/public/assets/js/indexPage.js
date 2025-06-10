@@ -41,7 +41,6 @@ let filtro = 0
 // botaoNotascresncente = 6
 
 function resertCores(){
-
     document.querySelector("#botaoRelevancia").style.background = "#e0dede"
     document.querySelector("#botaoRecentes").style.background = "#e0dede"
     document.querySelector("#botaoAntigas").style.background = "#e0dede"
@@ -49,8 +48,6 @@ function resertCores(){
     document.querySelector("#botaoMenosAvaliadas").style.background = "#e0dede"
     document.querySelector("#botaoNotasdescrescente").style.background = "#e0dede"
     document.querySelector("#botaoNotascresncente").style.background = "#e0dede"
-          
- 
 }
 
 function coresBotao(){
@@ -149,8 +146,6 @@ pesquisaInput.addEventListener("input", ()=>{
     atualizarPagina()
 })
 atualizarPagina()
-
-
 
 let btnAux = false
 document.querySelector("#botaoFiltros").addEventListener("click", ()=>{
