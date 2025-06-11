@@ -1,45 +1,39 @@
 
 async function ler() {
-    const resposta = await fetch("/noticias"); 
+    const resposta = await fetch("http://localhost:3000/noticias");
     const dados = await resposta.json();
     return dados; 
 }
 
-function cardNoticia(titulo, data, thumb, descricao, fonte){
-    return `<div class="noticia">
+function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
+    return `<a href="./modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
+            <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
-                <h4>${titulo}</h4>
-                <p style="font-size: 0.8rem; color: gray;">Data de Postagem: ${data}</p>
-                <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
+                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
                 <p>${descricao}</p>
-                <a href="${fonte}">Link da Noticia</a>
+                <p style="font-size: 0.8rem; color: gray;">${data}</p>
             </div>
-        </div>`
+        </div></a>`
 }
 
 function atualizarPagina(){
-    
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
     let noticiasMain = document.querySelector("#noticias")
-
     noticiasMain.innerHTML = ""
     ler().then(dados => {
-    dados.forEach((dado)=>{
+        let noticia = dados.find(item => item.id == id);
+        console.log(noticia)
         noticiasMain.innerHTML += cardNoticia(
-            dado.titulo,
-            dado.data,
-            dado.thumb,
-            dado.texto,
-            dado.fonte,
-            dado.mediaAvaliacoes
+            noticia.id,
+            noticia.titulo,
+            noticia.texto,
+            noticia.thumb,
+            noticia.data,
+            noticia.mediaAvaliacoes,
+            noticia.fonte
         )
-    })
     });
 }
 
-pesquisaInput = document.querySelector("#pesquisa")
-
-pesquisaInput.addEventListener("input", ()=>{
-    atualizarPagina()
-})
 atualizarPagina()
-

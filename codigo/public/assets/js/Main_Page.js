@@ -20,7 +20,7 @@ function cardNoticia(titulo, descricao, thumb, data, link){
 }
 
 function cardNoticia(id ,titulo, descricao, thumb, data, mediaAvaliacoes){
-    return `<a href="./detalhes?id=${id}"><div class="noticia">
+    return `<a href="./News_Page.html?id=${id}"><div class="noticia">
             <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
                 <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
