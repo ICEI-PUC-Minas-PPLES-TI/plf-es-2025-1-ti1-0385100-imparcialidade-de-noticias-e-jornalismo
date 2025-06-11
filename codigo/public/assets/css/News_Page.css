@@ -81,48 +81,23 @@ header input {
   height: 23px;
 }
 
-#noticias {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#noticias{
+  margin: 20px 15px;
 }
 
-.noticia {
-    display: flex;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    align-items: center;
-    gap: 15px;
+#foto{
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 20px 0px;
+  border: 2px solid black;
 }
 
 .noticia .fotoNoticia {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.noticia div {
-    display: flex;
-    flex-direction: column;
-}
-
-.noticia div h4 {
-    margin: 0;
-    font-weight: bold;
-}
-
-.noticia div p {
-    margin: 2px 0;
-    font-size: 1rem;
-}
-.noticia #divNomeEstrelas{
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-}
-
-.noticia #divNomeEstrelas img{
-    height: 30px;
-
+#texto{
+  border: 1px solid black;
 }

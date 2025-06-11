@@ -5,13 +5,16 @@ async function ler() {
     return dados; 
 }
 
-function cardNoticia(titulo, descricao, thumb, data, mediaAvaliacoes){
+function cardNoticia(titulo, descricao, thumb, data, mediaAvaliacoes, fonte){
     return `<div class="noticia">
-            <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
-                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
-                <p>${descricao}</p>
+                <h2>${titulo}</h2>
                 <p style="font-size: 0.8rem; color: gray;">${data}</p>
+                <div id="foto">
+                <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
+                </div>
+                <p id="texto">${descricao}</p>
+                <a href="${fonte}">Fonte</a>
             </div>
         </div>`
 }
