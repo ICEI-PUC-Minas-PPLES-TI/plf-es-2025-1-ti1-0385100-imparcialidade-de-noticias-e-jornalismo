@@ -5,15 +5,15 @@ async function ler() {
     return dados; 
 }
 
-function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
-    return `<a href="./modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
-            <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
+function cardNoticia(titulo, descricao, thumb, data, mediaAvaliacoes){
+    return `<div class="noticia">
+            <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
                 <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
                 <p>${descricao}</p>
                 <p style="font-size: 0.8rem; color: gray;">${data}</p>
             </div>
-        </div></a>`
+        </div>`
 }
 
 function atualizarPagina(){
@@ -25,7 +25,6 @@ function atualizarPagina(){
         let noticia = dados.find(item => item.id == id);
         console.log(noticia)
         noticiasMain.innerHTML += cardNoticia(
-            noticia.id,
             noticia.titulo,
             noticia.texto,
             noticia.thumb,
