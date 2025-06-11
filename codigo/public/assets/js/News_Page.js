@@ -9,14 +9,20 @@ function cardNoticia(titulo, descricao, thumb, data, mediaAvaliacoes, fonte){
     return `<div class="noticia">
             <div class="noticia-conteudo">
                 <h2>${titulo}</h2>
-                <p style="font-size: 0.8rem; color: gray;">${data}</p>
+                <p style="font-size: 0.09 rem; color: gray;">${data}</p>
                 <div id="foto">
                 <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
                 </div>
                 <p id="texto">${descricao}</p>
-                <a href="${fonte}">Fonte</a>
+                <a href="${fonte}">Link da Noticia</a>
             </div>
+            <img class="Tendence" src="../assets/images/a_up_arrow.png" alt="up_tendence_arrow">
+            <img class="Tendence" src="../assets/images/a_down_arrow.png" alt="down_tendence_arrow">
         </div>`
+}
+
+function resertCores(){
+    document.querySelector(".Tendence").style.background = "#e0dede"
 }
 
 function atualizarPagina(){
@@ -39,3 +45,4 @@ function atualizarPagina(){
 }
 
 atualizarPagina()
+
