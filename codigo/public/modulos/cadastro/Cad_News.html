@@ -113,6 +113,7 @@
 
     <script src="../../assets/js/Cad_News.js"></script>
     <script>
+        let noticiasQtn = 0
         function exibeNoticias() {
             tableNoticias = document.getElementById("table-noticias");
 
@@ -120,6 +121,7 @@
             tableNoticias.innerHTML = "";
 
             readNoticia (dados => {
+                noticiasQtn = dados.length
                 // Popula a tabela com os registros do banco de dados
                 for (i = 0; i < dados.length; i++) {
                     let noticia = dados[i];    
@@ -137,6 +139,9 @@
         }
 
         function init() {
+            const dataAtual = new Date().toISOString().split('T')[0];
+
+
             // Define uma variável para o formulário de contato
             formNoticia = document.getElementById("form-noticia");
 
@@ -159,13 +164,22 @@
                 let campoData = document.getElementById ('inputData').value;
 
                 // Cria um objeto com os dados do contato
-                let noticia = { data: campoData, 
+                let noticia = {
+                    id : noticiasQtn,
+                    data: campoData,
                     titulo: campoTitulo, 
                     thumb: campoImagem, 
                     categoria: campoCategoria, 
                     texto: campoTexto,
                     autor: campoAutor,
-                    fonte: campoFonte };
+                    fonte: campoFonte,
+                    created_at: dataAtual,
+                    lerMaisTarde: true, // tem que mudar nas proximas
+                    mediaAvaliacoes: 0,
+                    numAvaliacoes: 0,
+                    acessos: 0,
+                    updated_at : null
+                };
 
                 // Cria o contato no banco de dados
                 createNoticia(noticia, exibeNoticias);

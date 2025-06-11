@@ -1,7 +1,7 @@
 {
   "noticias": [
     {
-      "id": 1,
+      "id": "1",
       "data": "2025-05-17",
       "titulo": "1 acesso",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -17,7 +17,7 @@
       "updated_at": null
     },
     {
-      "id": 1,
+      "id": "1",
       "data": "2025-05-16",
       "titulo": "2 acessos",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -31,11 +31,27 @@
       "numAvaliacoes": 50,
       "acessos": 2,
       "updated_at": null
+    },
+    {
+      "id": "1e5c",
+      "data": "2025-05-17",
+      "titulo": "teste data",
+      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
+      "categoria": "undefined",
+      "texto": "HOJE Media ava = 4 ; numava = 100 ; Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
+      "autor": "João Victor",
+      "fonte": "https://g1.globo.com/",
+      "created_at": "2025-06-10",
+      "lerMaisTarde": true,
+      "mediaAvaliacoes": 1,
+      "numAvaliacoes": 1,
+      "acessos": 0,
+      "updated_at": null
     }
   ],
   "categorias": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Geopolítica",
       "created_at": "2025-02-27",
       "updated_at": null
@@ -43,7 +59,7 @@
   ],
   "fontes": [
     {
-      "id": 1,
+      "id": "1",
       "noticia_id": 1,
       "nome": "G1 News",
       "url": "https://g1.globo.com/"
@@ -51,7 +67,7 @@
   ],
   "autor": [
     {
-      "id": 1,
+      "id": "1",
       "noticia_id": 1,
       "nome": "Adalcino Junior",
       "biografia": "curta descrição da biografia do autor",
@@ -61,14 +77,14 @@
   ],
   "engajamentos": [
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "noticia_id": 1,
       "tipo": "like",
       "valor": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "noticia_id": 1,
       "tipo": "dislike",
@@ -77,7 +93,7 @@
   ],
   "tendencias": [
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "noticia_id": 1,
       "data": "2025-02-26",
@@ -85,7 +101,7 @@
       "valor": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "noticia_id": 1,
       "data": "2025-02-26",
@@ -95,7 +111,7 @@
   ],
   "noticias_salvas": [
     {
-      "id": 1,
+      "id": "1",
       "user_id": 1,
       "noticia_id": 1,
       "saved_at": "2025-02-27"
@@ -103,7 +119,7 @@
   ],
   "comentarios": [
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "noticia_id": 1,
       "texto": "comentário exemplo",
@@ -112,14 +128,14 @@
   ],
   "engajamento_comentarios": [
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "comentario_id": 1,
       "tipo": "like",
       "valor": 1
     },
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "comentario_id": 1,
       "tipo": "dislike",
@@ -128,7 +144,7 @@
   ],
   "notificacoes": [
     {
-      "id": 1,
+      "id": "1",
       "user_id": 1,
       "type": "comment_reply",
       "content": "Alguém respondeu seu comentário",
@@ -138,7 +154,7 @@
   ],
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Edislav97",
       "email": "esdislau997@webmail.com",
       "tipo": "usuario",
@@ -149,7 +165,7 @@
       "updated_at": null
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Jumberto dos Santos",
       "email": "jumberto.sa.ntos@email.com",
       "tipo": "moderador_forum",
@@ -160,7 +176,7 @@
       "updated_at": null
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "11011111",
       "email": null,
       "tipo": "admin",
@@ -169,23 +185,30 @@
       "bio": null,
       "created_at": "2024-12-10",
       "updated_at": null
+    },
+    {
+      "id": "cbd7",
+      "login": "joao",
+      "senha": "3",
+      "nome": "3",
+      "email": "3"
     }
   ],
   "forum_canais": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "G1 News",
       "descricao": "Discussões sobre G1",
       "data_criacao": "2025-02-26",
       "tipo": "publico",
       "moderador_forum_id": 2,
-	  "created_at": "2024-12-10",
+      "created_at": "2024-12-10",
       "updated_at": null
     }
   ],
   "forum_mensagens": [
     {
-      "id": 1,
+      "id": "1",
       "usuario_id": 1,
       "mensagem_id": null,
       "canal_id": 1,
@@ -194,7 +217,7 @@
       "hora": "9:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "usuario_id": 1,
       "mensagem_id": 1,
       "canal_id": 1,
@@ -205,7 +228,7 @@
   ],
   "media": [
     {
-      "id": 1,
+      "id": "1",
       "type": "imagem",
       "url": "https://example.com/image.jpg",
       "uploaded_by_usuario_id": 1,
@@ -214,28 +237,28 @@
   ],
   "noticias_media": [
     {
-      "id": 1,
+      "id": "1",
       "noticia_id": 1,
       "media_id": 1
     }
   ],
   "comentarios_media": [
     {
-      "id": 1,
+      "id": "1",
       "commentario_id": 1,
       "media_id": 1
     }
   ],
   "forum_mensagens_media": [
-	{
-	  "id": 1,
-	  "mensagem_id": 1,
-	  "media_id": 1
-	}
+    {
+      "id": "1",
+      "mensagem_id": 1,
+      "media_id": 1
+    }
   ],
   "audit_logs": [
     {
-      "id": 1,
+      "id": "1",
       "action": "edit_comment",
       "performed_by_usuario_id": 1,
       "target_id": 1,

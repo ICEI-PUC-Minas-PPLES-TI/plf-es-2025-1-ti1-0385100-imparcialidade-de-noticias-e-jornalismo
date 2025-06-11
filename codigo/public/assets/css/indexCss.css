@@ -55,7 +55,9 @@ header input {
     border-radius: 15px;
     border: 1px solid #ccc;
 }
-
+header span {
+    display: flex;
+}
 main {
     padding: 20px;
 }

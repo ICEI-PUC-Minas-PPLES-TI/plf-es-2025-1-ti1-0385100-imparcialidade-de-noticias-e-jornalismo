@@ -8,7 +8,6 @@
     <script src="./assets/js/indexPage.js" defer></script>
     <title>Valid News</title>
 </head>
-
 <body id="indexPage">
     <header>
         <ul>
@@ -21,6 +20,9 @@
         <span>
             <img src="./assets/images/search_icon.png">
             <input type="text" name="" id="pesquisa">
+        </span>
+        <span id="loginSpan">
+            <a href="./modulos/login/login.html"><h3>Login</h3></a>
         </span>
     </header>
 
@@ -52,5 +54,19 @@
     <Button id="botaoNotasdescrescente">Notas descrescente <img src="./assets/images/down_arrow.png"></Button>
     <Button id="botaoNotascresncente">Notas cresncente <img src="./assets/images/up_arrow.png	"></Button>
 </div>
+
+
+    <script defer>
+        let userLogado = sessionStorage.getItem("usuarioCorrente")
+        userLogado = JSON.parse(userLogado)
+        console.log(userLogado)
+        if (userLogado != null){
+            document.querySelector("#loginSpan").innerHTML = `
+            Bem vindo, ${userLogado.nome}
+        `
+        } else {
+            document.querySelector("#loginSpan").innerHTML = `<a href="./modulos/login/login.html"><h3>Login</h3></a>`
+        }
+    </script>
 </body>
 </html>
