@@ -63,7 +63,7 @@ header li:first-child {
 }
 
 header li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 header li:hover {

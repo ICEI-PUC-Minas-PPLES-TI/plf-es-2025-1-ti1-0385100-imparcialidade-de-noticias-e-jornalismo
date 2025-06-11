@@ -5,7 +5,7 @@ async function ler() {
     return dados; 
 }
 
-function cardNoticia(titulo, descricao, thumb, data, mediaAvaliacoes, fonte){
+function cardNoticia(titulo, descricao, thumb, data, fonte, tendence){
     return `<div class="noticia">
             <div class="noticia-conteudo">
                 <h2>${titulo}</h2>
@@ -16,13 +16,10 @@ function cardNoticia(titulo, descricao, thumb, data, mediaAvaliacoes, fonte){
                 <p id="texto">${descricao}</p>
                 <a href="${fonte}">Link da Noticia</a>
             </div>
-            <img class="Tendence" src="../assets/images/a_up_arrow.png" alt="up_tendence_arrow">
-            <img class="Tendence" src="../assets/images/a_down_arrow.png" alt="down_tendence_arrow">
+            <img id="up_tendence" class="Tendence" src="../assets/images/a_up_arrow.png" alt="up_tendence_arrow">
+            <img id="down_tendence" class="Tendence" src="../assets/images/a_down_arrow.png" alt="down_tendence_arrow">
+            <p id="value_tencence">Tendencia: ${tendence}</p>
         </div>`
-}
-
-function resertCores(){
-    document.querySelector(".Tendence").style.background = "#e0dede"
 }
 
 function atualizarPagina(){
@@ -38,11 +35,23 @@ function atualizarPagina(){
             noticia.texto,
             noticia.thumb,
             noticia.data,
-            noticia.mediaAvaliacoes,
-            noticia.fonte
+            noticia.fonte,
+            noticia.tendence,
         )
     });
 }
 
+
+
 atualizarPagina()
 
+
+
+// Adiciona funções para tratar os eventos 
+up_tendence = document.getElementById("up_tendence");
+down_tendence = document.getElementById("down_tendence");
+    
+    
+up_tendence.addEventListener ('click', function () {
+    let noticia = { tendence: tendencia+=1 };
+});

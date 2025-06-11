@@ -19,7 +19,7 @@ function cardNoticia(titulo, descricao, thumb, data, link){
         </div></a>`
 }
 
-function cardNoticia(id ,titulo, descricao, thumb, data, mediaAvaliacoes){
+function cardNoticia(id ,titulo, descricao, thumb, data, mediaAvaliacoes, tendence){
     return `<a href="./News_Page.html?id=${id}"><div class="noticia">
             <img class="fotoNoticia" src="${thumb}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
@@ -108,6 +108,7 @@ document.querySelector("#botaoNotascresncente").addEventListener("click", () => 
     filtro = 6
     atualizarPagina()
 })
+
 function atualizarPagina(){
     coresBotao()
     let noticiasMain = document.querySelector("#noticias")
@@ -140,7 +141,8 @@ function atualizarPagina(){
             dado.thumb,
             dado.data,
             dado.mediaAvaliacoes,
-            dado.fonte
+            dado.fonte,
+            dado.tendence
         )
     })
     });
