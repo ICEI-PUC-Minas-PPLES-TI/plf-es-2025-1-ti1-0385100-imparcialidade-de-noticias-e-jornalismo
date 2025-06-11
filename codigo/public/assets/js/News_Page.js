@@ -44,14 +44,3 @@ function atualizarPagina(){
 
 
 atualizarPagina()
-
-
-
-// Adiciona funções para tratar os eventos 
-up_tendence = document.getElementById("up_tendence");
-down_tendence = document.getElementById("down_tendence");
-    
-    
-up_tendence.addEventListener ('click', function () {
-    let noticia = { tendence: tendencia+=1 };
-});
