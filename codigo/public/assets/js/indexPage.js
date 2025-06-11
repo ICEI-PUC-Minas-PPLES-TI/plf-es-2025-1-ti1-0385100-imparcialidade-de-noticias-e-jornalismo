@@ -8,19 +8,8 @@ async function ler() {
     return dados; 
 }
 
-function cardNoticia(titulo, descricao, foto, data, link){
-    return `<a href="${link}"><div class="noticia">
-            <img src="${foto}" alt="Imagem da notícia">
-            <div class="noticia-conteudo">
-                <h4>${titulo}</h4>
-                <p>${descricao}</p>
-                <p style="font-size: 0.8rem; color: gray;">${data}</p>
-            </div>
-        </div></a>`
-}
-
 function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
-    return `<a href="./detalhes?id=${id}"><div class="noticia">
+    return `<a href="./modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
             <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
                 <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="./assets/images/stars${mediaAvaliacoes}.png" alt=""></span>

@@ -43,7 +43,6 @@
             <Input type="date" id="de_input"/>
             <label for="ate_input">Ate:</label>
             <Input type="date" id="ate_input"/>
-       
     </span>
     <h6>Ordernar Por:</h6>
     <Button id="botaoRelevancia">Relevancia</Button>
@@ -54,16 +53,12 @@
     <Button id="botaoNotasdescrescente">Notas descrescente <img src="./assets/images/down_arrow.png"></Button>
     <Button id="botaoNotascresncente">Notas cresncente <img src="./assets/images/up_arrow.png	"></Button>
 </div>
-
-
     <script defer>
         let userLogado = sessionStorage.getItem("usuarioCorrente")
         userLogado = JSON.parse(userLogado)
         console.log(userLogado)
         if (userLogado != null){
-            document.querySelector("#loginSpan").innerHTML = `
-            Bem vindo, ${userLogado.nome}
-        `
+            document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
         } else {
             document.querySelector("#loginSpan").innerHTML = `<a href="./modulos/login/login.html"><h3>Login</h3></a>`
         }

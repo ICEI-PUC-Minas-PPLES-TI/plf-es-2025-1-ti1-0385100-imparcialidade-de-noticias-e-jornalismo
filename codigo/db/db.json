@@ -1,7 +1,7 @@
 {
   "noticias": [
     {
-      "id": "1",
+      "id": 0,
       "data": "2025-05-17",
       "titulo": "1 acesso",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -17,7 +17,7 @@
       "updated_at": null
     },
     {
-      "id": "1",
+      "id": 1,
       "data": "2025-05-16",
       "titulo": "2 acessos",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -33,7 +33,7 @@
       "updated_at": null
     },
     {
-      "id": "1e5c",
+      "id": 2,
       "data": "2025-05-17",
       "titulo": "teste data",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
