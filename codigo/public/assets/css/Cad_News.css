@@ -19,9 +19,11 @@ label {
   height: 60px;
   padding-top: 10px;
 }
+
 #grid-contatos tbody {
   cursor: pointer;
 }
+
 #botoes{
   margin-top: 13px;
 }
