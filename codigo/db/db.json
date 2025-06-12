@@ -172,6 +172,30 @@
       "nomeUsurio": "Joao",
       "conteudo": "Teste",
       "data": "2025-06-12T02:36:31.180Z"
+    },
+    {
+      "id": 1,
+      "comentarioId": 1,
+      "idUsuario": 102,
+      "nomeUsurio": "Joao",
+      "conteudo": "gaw",
+      "data": "2025-06-12T02:44:56.958Z"
+    },
+    {
+      "id": 1,
+      "comentarioId": 2,
+      "idUsuario": 102,
+      "nomeUsurio": "Joao",
+      "conteudo": "gaw",
+      "data": "2025-06-12T02:44:59.423Z"
+    },
+    {
+      "id": 1,
+      "comentarioId": 2,
+      "idUsuario": 102,
+      "nomeUsurio": "Joao",
+      "conteudo": "gaw",
+      "data": "2025-06-12T02:45:01.569Z"
     }
   ],
   "engajamento_comentarios": [
