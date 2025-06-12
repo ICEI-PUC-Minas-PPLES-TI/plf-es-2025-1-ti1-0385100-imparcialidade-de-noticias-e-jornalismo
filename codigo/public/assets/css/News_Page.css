@@ -124,5 +124,23 @@ header input {
 
 .noticia #divNomeEstrelas img{
     height: 30px;
+}
 
+#areaComentarios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comentario {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black ;
+}
+
+.respostas{
+    margin-left: 30px;
 }

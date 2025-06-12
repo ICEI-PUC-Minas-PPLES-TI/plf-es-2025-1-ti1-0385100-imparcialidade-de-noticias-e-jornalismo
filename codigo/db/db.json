@@ -119,11 +119,59 @@
   ],
   "comentarios": [
     {
-      "id": "1",
-      "usuario_id": 1,
-      "noticia_id": 1,
-      "texto": "comentário exemplo",
-      "data": "2025-02-26"
+      "id": 1,
+      "idUsuario": 101,
+      "nomeUsurio": "Joao",
+      "conteudo": "Esse produto é bom?",
+      "data": "2025-05-21T12:00:00Z",
+      "likes": [
+        {
+          "idUsuario": 201
+        },
+        {
+          "idUsuario": 202
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "idUsuario": 101,
+      "nomeUsurio": "Joao",
+      "conteudo": "Esse produto é bom?",
+      "data": "2025-05-21T12:00:00Z",
+      "likes": [
+        {
+          "idUsuario": 201
+        },
+        {
+          "idUsuario": 202
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "idUsuario": 101,
+      "nomeUsurio": "Bruna",
+      "conteudo": "Esse produto é bom?",
+      "data": "2025-05-21T12:00:00Z",
+      "likes": [
+        {
+          "idUsuario": 201
+        },
+        {
+          "idUsuario": 202
+        }
+      ]
+    }
+  ],
+  "respostas": [
+    {
+      "id": 1,
+      "comentarioId": 3,
+      "idUsuario": 102,
+      "nomeUsurio": "Joao",
+      "conteudo": "Teste",
+      "data": "2025-06-12T02:36:31.180Z"
     }
   ],
   "engajamento_comentarios": [
