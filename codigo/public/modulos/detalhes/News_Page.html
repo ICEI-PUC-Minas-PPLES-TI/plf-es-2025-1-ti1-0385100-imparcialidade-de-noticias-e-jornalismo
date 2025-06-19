@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/News_Page.css">
     <script src="../../assets/js/News_Page.js" defer></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Valid News</title>
 </head>
 
@@ -18,20 +23,35 @@
             <li>FORUM</li>
         </ul>
         <span id="loginSpan">
-            <a href="../../login/login.html"><h3>Login</h3></a>
         </span>
     </header>
 
     <main>
         <div id="noticias">
+            <div class="noticia">
+                <img class="fotoNoticia" src="" alt="Imagem da notícia">
+                <div class="noticia-conteudo">
 
-
+                </div>
+            </div>
         </div>
     </main>
 
     <div id="areaComentarios">
         <div id="cometariosEnviar">
-            <input id="inputEnviar" type="text">
+            <span>
+                <div id="nomeEestrelas">
+                    <h4>Fazer comentario</h4>
+                    <span>
+                        <ion-icon name="star-outline" id="star1"></ion-icon>
+                        <ion-icon name="star-outline" id="star2"></ion-icon>
+                        <ion-icon name="star-outline" id="star3"></ion-icon>
+                        <ion-icon name="star-outline" id="star4"></ion-icon>
+                        <ion-icon name="star-outline" id="star5"></ion-icon>
+                    </span>
+                </div>
+                <textarea id="inputEnviar" type="text" placeholder="Digite aqui"></textarea>
+            </span>
             <button id="btnEnviar">Enviar</button>
         </div>
 

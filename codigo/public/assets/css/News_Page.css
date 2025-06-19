@@ -76,10 +76,6 @@ header input {
   border-radius: 15px;
   border: 1px solid #ccc;
 }
-#search{
-  width: 23px;
-  height: 23px;
-}
 
 #noticias {
     display: flex;
@@ -132,15 +128,129 @@ header input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .comentario {
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
+    padding: 10px;
     border: 1px solid black ;
 }
+.comentario h4{
+    width: 90%;
+    max-height: 100px;
+    font-size: 16px;
+    padding: 10px;
 
+
+    /* chat */
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.comentario .tituloEdata{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.comentario .spanInputEButton{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.comentario .spanInputEButton input{
+    width: 90%;
+    padding: 10px;
+}
 .respostas{
-    margin-left: 30px;
+    border-left: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.respostas h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.respostas h6{
+    font-size: 12px;
+    padding: 5px;
+}
+.respostas h4{
+    width: 90%;
+    max-height: 100px;
+    font-size: 16px;
+    padding: 10px;
+
+
+    /* chat */
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.respostas .spanCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#cometariosEnviar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid black ;
+    max-height: 500px;
+}
+#cometariosEnviar h4{
+    font-weight: bold;
+    height: 25px;
+}
+#inputEnviar{
+    width: 500px;
+    min-height: 100px;
+    max-height: 400px;
+    padding: 10px;
+}
+#btnEnviar, .btnRespClass{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    font-weight: 700;
+}
+#cometariosEnviar ion-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+#nomeEestrelas{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+#btnEnviar:hover, .btnRespClass:hover{
+    color: blue;
+}
+#btnEnviar:active. .btnRespClass:active{
+    scale: .98;
+}
+.buttonLikeComent {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    background: transparent;
+    border: none;
+}
+.spanDataECoracao{
+    display: flex;
+    gap: 20px;
 }

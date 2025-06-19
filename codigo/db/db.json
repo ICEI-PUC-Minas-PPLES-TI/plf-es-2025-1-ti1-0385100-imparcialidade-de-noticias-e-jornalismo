@@ -1,7 +1,7 @@
 {
   "noticias": [
     {
-      "id": 0,
+      "id": "0",
       "data": "2025-05-17",
       "titulo": "1 acesso",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -17,7 +17,7 @@
       "updated_at": null
     },
     {
-      "id": 1,
+      "id": "1",
       "data": "2025-05-16",
       "titulo": "2 acessos",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -33,7 +33,7 @@
       "updated_at": null
     },
     {
-      "id": 2,
+      "id": "2",
       "data": "2025-05-17",
       "titulo": "teste data",
       "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
@@ -119,83 +119,42 @@
   ],
   "comentarios": [
     {
-      "id": 1,
-      "idUsuario": 101,
-      "nomeUsurio": "Joao",
-      "conteudo": "Esse produto é bom?",
-      "data": "2025-05-21T12:00:00Z",
-      "likes": [
-        {
-          "idUsuario": 201
-        },
-        {
-          "idUsuario": 202
-        }
-      ]
+      "id": "7510",
+      "stars": 0,
+      "idNoticia": "1",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "teste",
+      "data": "2025-06-19T05:17:56.156Z",
+      "likes": []
     },
     {
-      "id": 2,
-      "idUsuario": 101,
-      "nomeUsurio": "Joao",
-      "conteudo": "Esse produto é bom?",
-      "data": "2025-05-21T12:00:00Z",
-      "likes": [
-        {
-          "idUsuario": 201
-        },
-        {
-          "idUsuario": 202
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "idUsuario": 101,
-      "nomeUsurio": "Bruna",
-      "conteudo": "Esse produto é bom?",
-      "data": "2025-05-21T12:00:00Z",
-      "likes": [
-        {
-          "idUsuario": 201
-        },
-        {
-          "idUsuario": 202
-        }
-      ]
+      "id": "a090",
+      "stars": 0,
+      "idNoticia": "1",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "teste",
+      "data": "2025-06-19T05:40:29.393Z",
+      "likes": []
     }
   ],
   "respostas": [
     {
-      "id": 1,
-      "comentarioId": 3,
-      "idUsuario": 102,
-      "nomeUsurio": "Joao",
-      "conteudo": "Teste",
-      "data": "2025-06-12T02:36:31.180Z"
+      "id": "f4fb",
+      "comentarioId": "7510",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "conteudo teste",
+      "data": "2025-06-19T05:18:42.121Z"
     },
     {
-      "id": 1,
-      "comentarioId": 1,
-      "idUsuario": 102,
-      "nomeUsurio": "Joao",
-      "conteudo": "gaw",
-      "data": "2025-06-12T02:44:56.958Z"
-    },
-    {
-      "id": 1,
-      "comentarioId": 2,
-      "idUsuario": 102,
-      "nomeUsurio": "Joao",
-      "conteudo": "gaw",
-      "data": "2025-06-12T02:44:59.423Z"
-    },
-    {
-      "id": 1,
-      "comentarioId": 2,
-      "idUsuario": 102,
-      "nomeUsurio": "Joao",
-      "conteudo": "gaw",
-      "data": "2025-06-12T02:45:01.569Z"
+      "id": "f0fe",
+      "comentarioId": "7510",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "conteudo teste",
+      "data": "2025-06-19T05:35:09.305Z"
     }
   ],
   "engajamento_comentarios": [
