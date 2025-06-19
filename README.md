@@ -6,9 +6,7 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 ## Alunos integrantes da equipe
 
 * Carlos Eduardo Pamponet Porto Lima
-* Francisco Teixeira de Salles Gloor
 * João Victor França
-* Guilherme d'Angelis Ribeiro Lelis
 
 ## Professores responsáveis
 
