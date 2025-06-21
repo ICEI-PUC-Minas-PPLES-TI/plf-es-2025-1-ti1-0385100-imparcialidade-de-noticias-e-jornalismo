@@ -10,10 +10,9 @@
       "autor": "João Victor",
       "fonte": "https://g1.globo.com/",
       "created_at": "2025-02-27",
-      "lerMaisTarde": false,
-      "mediaAvaliacoes": 4,
-      "numAvaliacoes": 100,
-      "acessos": 1,
+      "mediaAvaliacoes": 2,
+      "numAvaliacoes": 4,
+      "acessos": 38,
       "updated_at": null
     },
     {
@@ -26,10 +25,9 @@
       "autor": "João Victor",
       "fonte": "https://g1.globo.com/",
       "created_at": "2025-02-27",
-      "lerMaisTarde": false,
       "mediaAvaliacoes": 3,
       "numAvaliacoes": 50,
-      "acessos": 2,
+      "acessos": 4,
       "updated_at": null
     },
     {
@@ -43,9 +41,9 @@
       "fonte": "https://g1.globo.com/",
       "created_at": "2025-06-10",
       "lerMaisTarde": true,
-      "mediaAvaliacoes": 1,
-      "numAvaliacoes": 1,
-      "acessos": 0,
+      "mediaAvaliacoes": 2,
+      "numAvaliacoes": 2,
+      "acessos": 4,
       "updated_at": null
     }
   ],
@@ -119,39 +117,24 @@
   ],
   "gosteis": [
     {
-      "id": "be4c",
+      "id": "9634",
       "idUsuario": "cbd7",
-      "comentarioId": "7510"
+      "comentarioId": "5795"
     },
     {
-      "id": "3e36",
+      "id": "27e1",
       "idUsuario": "cbd7",
-      "comentarioId": "a090"
+      "comentarioId": "5736"
     },
     {
-      "id": "7bba",
+      "id": "b0d9",
       "idUsuario": "cbd7",
-      "comentarioId": "4894"
+      "comentarioId": "cadb"
     },
     {
-      "id": "387f",
-      "comentarioId": "a090"
-    },
-    {
-      "id": "efda",
-      "comentarioId": "7510"
-    },
-    {
-      "id": "a3ac",
-      "comentarioId": "4894"
-    },
-    {
-      "id": "8941",
-      "comentarioId": "26f7"
-    },
-    {
-      "id": "916d",
-      "comentarioId": "dc72"
+      "id": "6a3b",
+      "idUsuario": "cbd7",
+      "comentarioId": "d057"
     }
   ],
   "comentarios": [
@@ -218,6 +201,36 @@
       "nomeUsurio": "joao2",
       "conteudo": "teste",
       "data": "2025-06-21T02:48:56.431Z",
+      "likes": []
+    },
+    {
+      "id": "5736",
+      "stars": 4,
+      "idNoticia": "0",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "Teste, sem brava",
+      "data": "2025-06-21T17:29:28.120Z",
+      "likes": []
+    },
+    {
+      "id": "5795",
+      "stars": 5,
+      "idNoticia": "0",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "Oz, noticia malada",
+      "data": "2025-06-21T17:29:35.389Z",
+      "likes": []
+    },
+    {
+      "id": "d057",
+      "stars": 2,
+      "idNoticia": "0",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "Sem brava",
+      "data": "2025-06-21T17:29:40.021Z",
       "likes": []
     }
   ],
@@ -290,16 +303,6 @@
       "valor": 0
     }
   ],
-  "notificacoes": [
-    {
-      "id": "1",
-      "user_id": 1,
-      "type": "comment_reply",
-      "content": "Alguém respondeu seu comentário",
-      "read": false,
-      "created_at": "2025-02-27"
-    }
-  ],
   "usuarios": [
     {
       "id": "1",
@@ -346,79 +349,8 @@
       "login": "joao2",
       "senha": "joao2",
       "nome": "joao2",
-      "email": "joao2"
-    }
-  ],
-  "forum_canais": [
-    {
-      "id": "1",
-      "nome": "G1 News",
-      "descricao": "Discussões sobre G1",
-      "data_criacao": "2025-02-26",
-      "tipo": "publico",
-      "moderador_forum_id": 2,
-      "created_at": "2024-12-10",
-      "updated_at": null
-    }
-  ],
-  "forum_mensagens": [
-    {
-      "id": "1",
-      "usuario_id": 1,
-      "mensagem_id": null,
-      "canal_id": 1,
-      "texto": "Mensagem de exemplo",
-      "data": "2025-02-26",
-      "hora": "9:00"
-    },
-    {
-      "id": "2",
-      "usuario_id": 1,
-      "mensagem_id": 1,
-      "canal_id": 1,
-      "texto": "mensagem de resposta exemplo",
-      "data": "2025-02-27",
-      "hora": "10:00"
-    }
-  ],
-  "media": [
-    {
-      "id": "1",
-      "type": "imagem",
-      "url": "https://example.com/image.jpg",
-      "uploaded_by_usuario_id": 1,
-      "created_at": "2025-02-27"
-    }
-  ],
-  "noticias_media": [
-    {
-      "id": "1",
-      "noticia_id": 1,
-      "media_id": 1
-    }
-  ],
-  "comentarios_media": [
-    {
-      "id": "1",
-      "commentario_id": 1,
-      "media_id": 1
-    }
-  ],
-  "forum_mensagens_media": [
-    {
-      "id": "1",
-      "mensagem_id": 1,
-      "media_id": 1
-    }
-  ],
-  "audit_logs": [
-    {
-      "id": "1",
-      "action": "edit_comment",
-      "performed_by_usuario_id": 1,
-      "target_id": 1,
-      "target_type": "comment",
-      "performed_at": "2025-02-27"
+      "email": "joao2",
+      "admin": true
     }
   ]
 }

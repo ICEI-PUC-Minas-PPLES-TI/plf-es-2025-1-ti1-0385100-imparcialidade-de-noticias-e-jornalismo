@@ -90,6 +90,25 @@ async function deleteAnyCurtida(idCurtida) {
     const dados = await resposta.json();
     return dados;
 }
+async function lerAcessos(idNoticia) {
+    let mNoticia
+    await ler(idNoticia).then((noticiasEncontradas) => {
+        noticiasEncontradas.forEach((noticia) => {
+            mNoticia = noticia
+        })
+    })
+    mNoticia.acessos = mNoticia.acessos + 1
+
+    let mediaAva = 0.0
+    await lerComentarios(idNoticia).then((comentarios)=>{
+        mNoticia.numAvaliacoes = comentarios.length
+        comentarios.forEach((comentario) => {
+            mediaAva += comentario.stars
+        })
+        mNoticia.mediaAvaliacoes = parseInt(mediaAva / comentarios.length)
+    })
+    await fetch("http://localhost:3000/noticias/"+idNoticia, {method: 'PUT', body: JSON.stringify(mNoticia)})
+}
 async function addComentario(){
     if (userLogado != null){
         let text = document.querySelector("#inputEnviar").value
@@ -130,7 +149,6 @@ async function addOrRemoveCurtida(idComentario){
 
             mCurtidas = curtidas
         })
-        console.log(mCurtidas)
         if (mCurtidas.length > 0){
             await deleteAnyCurtida(mCurtidas[0].id)
         } else {
@@ -164,7 +182,6 @@ function cardRespotas(nomeUsurio,conteudo,data, likes){
 }
 function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, stars){
     let estrelas
-    console.log("eakwgfa"+stars)
 
     if (stars == 1){
         estrelas = `<ion-icon name="star"></ion-icon>
@@ -203,8 +220,6 @@ function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, st
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>`
     }
-
-    console.log(estrelas)
 
     return `<div class="comentario" id="divComentario${idComentario}" xmlns="http://www.w3.org/1999/html">
                 <span class="tituloEdata">
@@ -276,7 +291,6 @@ async function atualizarPagina(){
                 comentario.data,
                 comentario.stars
             ));
-            console.log(comentario.stars)
 
             const comentarioAtualDiv = document.querySelector(`#divComentario${comentario.id}`)
             await lerRespostas(comentario.id).then((respostas) => {
@@ -291,19 +305,24 @@ async function atualizarPagina(){
                 })
             })
 
-            console.log(comentario.id)
             const botaoResposta = document.querySelector(`#BntResp${comentario.id}`);
             const botaoLike = document.querySelector(`#coracaoIdComentario${comentario.id}`)
             const qtnGosteis = document.querySelector(`#qtnGosteis${comentario.id}`)
 
             if (botaoLike){
-                await lerCurtidas(comentario.id ,userLogado.id).then((dado) => {
-                    if (dado.length > 0){
-                        botaoLike.name = "heart"
-                    } else {
-                        botaoLike.name = "heart-outline"
-                    }
-                })
+
+
+                if (userLogado != null){
+                    await lerCurtidas(comentario.id, userLogado.id).then((dado) => {
+                        if (dado.length > 0){
+                            botaoLike.name = "heart"
+                        } else {
+                            botaoLike.name = "heart-outline"
+                        }
+                    })
+
+
+                }
 
                 await todosUsuariosNoComent(comentario.id).then((dado) => {
                     qtnGosteis.innerHTML = dado.length
@@ -379,11 +398,28 @@ function setStar5(){
     star5.name = "star"
     stars = 5
 }
-function init(){
+async function init(){
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
+
+    if (!id){
+        await mostrarDuvidaComOk("Erro com a noticia", false, "Nao foi possivel indentificar a noticia que voce procura, voltando a tela inicial")
+        window.location.href = "../../index.html"
+        return
+    }
+
+    await lerAcessos(id)
+
+
     userLogado = sessionStorage.getItem("usuarioCorrente")
     if (userLogado != null){
         userLogado = JSON.parse(userLogado)
-        document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
+        if (userLogado.id){
+            document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
+        } else {
+            userLogado = null
+        }
     } else {
         document.querySelector("#loginSpan").innerHTML = `<a href="../login/login.html"><h3>Login</h3></a>`
     }

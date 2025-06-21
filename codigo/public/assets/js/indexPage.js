@@ -9,6 +9,10 @@ async function ler() {
 }
 
 function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
+    if (mediaAvaliacoes == 0){
+        mediaAvaliacoes = 1
+    }
+
     return `<a href="./modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
             <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
