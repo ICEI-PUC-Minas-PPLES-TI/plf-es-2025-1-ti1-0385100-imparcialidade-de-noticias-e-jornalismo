@@ -15,13 +15,24 @@
 
 <body onload="init()">
     <header>
-        <ul>
+        <ul id="headerButtons">
             <a href="../../index.html"><li>Valid News</li></a>
-            <li>TENTÊNCIAS</li>
-            <li>RELEVÂNCIA</li>
-            <li>FORUM</li>
+            <a><li>RELEVANCIA</li></a>
+            <a><li>DA SEMANA</li></a>
+            <a><li>ESPORTE</li></a>
         </ul>
+        <span>
+            <img src="../../assets/images/search_icon.png">
+            <input type="text" name="" id="pesquisa">
+        </span>
+        <span id="loginSpan">
+        </span>
     </header>
+
+    <div id="loginMenu">
+        <Button id="botaoFecharloginMenu">Fechar</Button>
+        <Button id="botaoSair">Sair</Button>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -41,10 +52,6 @@
                 <div class="col-sm-10">
                     <label for="inputTitulo">Titulo:</label>
                     <input type="text" class="form-control" id="inputTitulo">
-                </div>
-                <div class="col-sm-2">
-                    <label for="inputData">Data:</label>
-                    <input type="text" class="form-control" id="inputData">
                 </div>
             </div>
             <div class="form-group row">
@@ -160,18 +167,16 @@
                 let campoFonte = document.getElementById ('inputFonte').value;
                 let campoCategoria = document.getElementById ('inputCategoria').value;
                 let campoImagem = document.getElementById ('inputImagem').value;
-                let campoData = document.getElementById ('inputData').value;
 
                 // Cria um objeto com os dados do contato
                 let noticia = {
-                    data: campoData,
+                    data: dataAtual,
                     titulo: campoTitulo, 
                     thumb: campoImagem, 
                     categoria: campoCategoria, 
                     texto: campoTexto,
                     autor: campoAutor,
                     fonte: campoFonte,
-                    created_at: dataAtual,
                     mediaAvaliacoes: 0,
                     numAvaliacoes: 0,
                     acessos: 0,
@@ -201,7 +206,6 @@
                 let campoFonte = document.getElementById ('inputFonte').value;
                 let campoCategoria = document.getElementById ('inputCategoria').value;
                 let campoImagem = document.getElementById ('inputImagem').value;
-                let campoData = document.getElementById ('inputData').value;
 
                 // Cria um objeto com os dados do contato
                 let noticia = { data: campoData, 
@@ -263,7 +267,6 @@
                     // Preenche os campos do formulário com os dados da linha selecionada na tabela
                     document.getElementById ('inputId').value = colunas[0].innerText;
                     document.getElementById ('inputTitulo').value = colunas[1].innerText;
-                    document.getElementById ('inputData').value = colunas[2].innerText;
                     document.getElementById ('inputAutor').value = colunas[3].innerText;
                     document.getElementById ('inputImagem').value = colunas[4].innerText;
                     document.getElementById ('inputTexto').value = colunas[5].innerText;
@@ -275,6 +278,32 @@
             });
 
             exibeNoticias();
+        }
+    </script>
+
+    <script defer>
+        let userLogado = sessionStorage.getItem("usuarioCorrente")
+        userLogado = JSON.parse(userLogado)
+        console.log(userLogado)
+        if (userLogado != null){
+            document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
+            document.querySelector("#botaoSair").addEventListener("click", ()=>{
+                sessionStorage.removeItem("usuarioCorrente")
+                location.reload()
+            })
+
+            let bntLoginMenu = false
+            document.querySelector("#loginSpan").addEventListener("click", ()=>{
+                document.querySelector("#loginMenu").style.right = bntLoginMenu ? "-500px" : "0"
+                bntLoginMenu = !bntLoginMenu
+            })
+            document.querySelector("#botaoFecharloginMenu").addEventListener("click", ()=>{
+                document.querySelector("#loginMenu").style.right = "-500px"
+                bntLoginMenu = false
+            })
+        } else {
+            document.querySelector("#loginSpan").innerHTML = `<a href="./modulos/login/login.html"><h3>Login</h3></a>`
+            document.querySelector("#loginMenu").style.display = "none"
         }
     </script>
 </body>

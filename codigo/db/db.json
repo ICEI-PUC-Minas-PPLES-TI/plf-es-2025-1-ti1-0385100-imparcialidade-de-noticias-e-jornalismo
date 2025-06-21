@@ -1,50 +1,35 @@
 {
+  "daSemana": [
+    "2925",
+    2,
+    3
+  ],
   "noticias": [
     {
-      "id": "0",
-      "data": "2025-05-17",
-      "titulo": "1 acesso",
-      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
-      "categoria_id": 1,
-      "texto": "HOJE Media ava = 4 ; numava = 100 ; Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
-      "autor": "João Victor",
-      "fonte": "https://g1.globo.com/",
-      "created_at": "2025-02-27",
-      "mediaAvaliacoes": 2,
-      "numAvaliacoes": 4,
-      "acessos": 40,
-      "updated_at": null
+      "id": "2925",
+      "data": "2025-06-21",
+      "titulo": "Doue",
+      "thumb": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/Mbappe-e1744745022618.webp?w=1200&h=675&crop=1",
+      "categoria": "Esporte",
+      "texto": "O atacante francês Kylian Mbappé iniciou a recuperação da gastroenterite que o tirou do empate com o Al-Hilal, na estreia do time espanhol na Copa do Mundo de Clubes. No entanto, segundo o jornal espanhol \"As\", o camisa 9 ainda não tem condições de enfrentar o Pachuca, domingo, pela segunda rodada do Grupo H.",
+      "autor": "Doue",
+      "fonte": "G1",
+      "mediaAvaliacoes": null,
+      "numAvaliacoes": 0,
+      "acessos": 26
     },
     {
-      "id": "1",
-      "data": "2025-05-16",
-      "titulo": "2 acessos",
-      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
-      "categoria_id": 1,
-      "texto": "ONTEM Media ava = 3 ; numava = 50 ;Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
-      "autor": "João Victor",
-      "fonte": "https://g1.globo.com/",
-      "created_at": "2025-02-27",
-      "mediaAvaliacoes": 3,
-      "numAvaliacoes": 50,
-      "acessos": 4,
-      "updated_at": null
-    },
-    {
-      "id": "2",
-      "data": "2025-05-17",
-      "titulo": "teste data",
-      "thumb": "https://s2-ge.glbimg.com/9MfeT8Hbp2ZjPfK7w2xl8QjhUyo=/0x353:3000x1998/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/I/b/erDYb6SOqco6ZaF7hz7w/agif25051423255689.jpg",
-      "categoria": "undefined",
-      "texto": "HOJE Media ava = 4 ; numava = 100 ; Sem chance de avançar na competição, o Cruzeiro, que preservou titulares, venceu o Palestino por 2 a 1, na noite desta quarta-feira, no Mineirão, pela quinta rodada da Conmebol Sul-Americana.",
-      "autor": "João Victor",
-      "fonte": "https://g1.globo.com/",
-      "created_at": "2025-06-10",
-      "lerMaisTarde": true,
-      "mediaAvaliacoes": 2,
-      "numAvaliacoes": 2,
-      "acessos": 5,
-      "updated_at": null
+      "id": "af9a",
+      "data": "2025-06-21",
+      "titulo": "Mbappe",
+      "thumb": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/Mbappe-e1744745022618.webp?w=1200&h=675&crop=1",
+      "categoria": "Esporte",
+      "texto": "O atacante francês Kylian Mbappé iniciou a recuperação da gastroenterite que o tirou do empate com o Al-Hilal, na estreia do time espanhol na Copa do Mundo de Clubes. No entanto, segundo o jornal espanhol \"As\", o camisa 9 ainda não tem condições de enfrentar o Pachuca, domingo, pela segunda rodada do Grupo H.",
+      "autor": "Doue",
+      "fonte": "G1",
+      "mediaAvaliacoes": 5,
+      "numAvaliacoes": 1,
+      "acessos": 14
     }
   ],
   "categorias": [
@@ -232,6 +217,16 @@
       "conteudo": "Sem brava",
       "data": "2025-06-21T17:29:40.021Z",
       "likes": []
+    },
+    {
+      "id": "6301",
+      "stars": 5,
+      "idNoticia": "af9a",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "Gostei",
+      "data": "2025-06-21T20:26:23.777Z",
+      "likes": []
     }
   ],
   "respostas": [
@@ -304,46 +299,6 @@
     }
   ],
   "usuarios": [
-    {
-      "id": "1",
-      "nome": "Edislav97",
-      "email": "esdislau997@webmail.com",
-      "tipo": "usuario",
-      "senha": "m73mPAjvhc&5Aai#8y7^",
-      "avatar": "https://example.com/avatar1.jpg",
-      "bio": "Desenvolvedor de software e entusiasta de tecnologia.",
-      "created_at": "2025-02-26",
-      "updated_at": null
-    },
-    {
-      "id": "2",
-      "nome": "Jumberto dos Santos",
-      "email": "jumberto.sa.ntos@email.com",
-      "tipo": "moderador_forum",
-      "senha": "k8ans&3905m¨Gsh^",
-      "avatar": "https://example.com/avatar2.jpg",
-      "bio": "Entusiasta de tecnologia e notícias.",
-      "created_at": "2025-01-10",
-      "updated_at": null
-    },
-    {
-      "id": "3",
-      "nome": "11011111",
-      "email": null,
-      "tipo": "admin",
-      "senha": "03s;lk&W)2#$Ç@P9O%Ni",
-      "avatar": null,
-      "bio": null,
-      "created_at": "2024-12-10",
-      "updated_at": null
-    },
-    {
-      "id": "cbd7",
-      "login": "joao",
-      "senha": "3",
-      "nome": "3",
-      "email": "3"
-    },
     {
       "id": "bb25",
       "login": "joao2",

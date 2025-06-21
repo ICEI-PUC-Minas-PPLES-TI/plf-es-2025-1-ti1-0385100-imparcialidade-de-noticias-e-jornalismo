@@ -9,7 +9,7 @@ async function ler() {
 }
 
 function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
-    if (mediaAvaliacoes == 0){
+    if (mediaAvaliacoes === 0 || mediaAvaliacoes == null){
         mediaAvaliacoes = 1
     }
 

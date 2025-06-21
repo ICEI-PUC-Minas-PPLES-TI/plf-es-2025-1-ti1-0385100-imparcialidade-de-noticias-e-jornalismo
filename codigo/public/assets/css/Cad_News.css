@@ -30,7 +30,8 @@ label {
   height: 150px;
 }
 
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
@@ -54,14 +55,14 @@ header ul {
   gap: 20px;
 }
 
-header li:first-child {
+header a:first-child {
   font-weight: bold;
   font-size: 2rem;
   margin-right: 30px;
 }
 
-header li {
-    cursor: pointer;
+header a {
+  cursor: pointer;
 }
 
 header li:hover {
@@ -76,7 +77,25 @@ header input {
   border-radius: 15px;
   border: 1px solid #ccc;
 }
-#search{
-  width: 23px;
-  height: 23px;
+header span {
+  display: flex;
+}
+
+#loginMenu{
+  position: absolute;
+  top: 0;
+  right: -400px;
+
+  background: #ffffff;
+  border: 3px solid black;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+#loginMenu button{
+  background: #e0dede;
+  width: 90%;
+  padding: 10px;
 }
