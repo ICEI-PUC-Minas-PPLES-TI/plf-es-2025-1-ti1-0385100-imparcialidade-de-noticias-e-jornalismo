@@ -137,6 +137,7 @@ header input {
     flex-direction: column;
     padding: 10px;
     border: 1px solid black ;
+    margin-bottom: 10px;
 }
 .comentario h4{
     width: 90%;
@@ -208,6 +209,7 @@ header input {
     padding: 10px;
     border: 1px solid black ;
     max-height: 500px;
+    margin-bottom: 20px;
 }
 #cometariosEnviar h4{
     font-weight: bold;

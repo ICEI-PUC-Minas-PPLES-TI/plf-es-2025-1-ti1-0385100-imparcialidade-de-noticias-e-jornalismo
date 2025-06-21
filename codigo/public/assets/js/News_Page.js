@@ -8,7 +8,7 @@ const star3 = document.querySelector("#star3")
 const star4 = document.querySelector("#star4")
 const star5 = document.querySelector("#star5")
 let noticiasMain = document.querySelector("#noticias")
-let cometariosMain = document.querySelector("#comentario")
+let comentariosMain = document.querySelector("#comentario")
 let idNoticia
 
 async function ler(idNoticia) {
@@ -70,13 +70,23 @@ async function lerRespostas(idComentario) {
     const dados = await resposta.json();
     return dados;
 }
+async function lerCurtidas(comentarioId, idUsuario) {
+    const resposta = await fetch(`http://localhost:3000/gosteis?comentarioId=${comentarioId}&idUsuario=${idUsuario}`);
+    const dados = await resposta.json();
+    return dados;
+}
+async function todosUsuariosNoComent(comentarioId) {
+    const resposta = await fetch(`http://localhost:3000/gosteis?comentarioId=${comentarioId}`);
+    const dados = await resposta.json();
+    return dados;
+}
 async function createAny(url, conteudo) {
     const resposta = await fetch(url, {method: 'POST', body: JSON.stringify(conteudo)})
     const dados = await resposta.json();
     return dados;
 }
-async function editAny(url, idComentario, conteudo) {
-    const resposta = await fetch(url, {method: 'PUT', body: JSON.stringify(conteudo)})
+async function deleteAnyCurtida(idCurtida) {
+    const resposta = await fetch(`http://localhost:3000/gosteis/${idCurtida}`, {method: 'DELETE'})
     const dados = await resposta.json();
     return dados;
 }
@@ -113,11 +123,22 @@ async function addResposta(comentarioId, conteudo){
         mostrarNotificacao("Faça login para responder", false)
     }
 }
-async function addorRemoveComentarioLike(usuarioId, idComentario, removerOuColocar){
+async function addOrRemoveCurtida(idComentario){
     if (userLogado != null){
+        let mCurtidas
+        await lerCurtidas(idComentario ,userLogado.id).then((curtidas) => {
 
-        await editAny("http://localhost:3000/respostas?comentarioId="+idComentario)
-
+            mCurtidas = curtidas
+        })
+        console.log(mCurtidas)
+        if (mCurtidas.length > 0){
+            await deleteAnyCurtida(mCurtidas[0].id)
+        } else {
+            await  createAny("http://localhost:3000/gosteis", {
+                idUsuario : userLogado.id,
+                comentarioId : idComentario,
+            })
+        }
     } else {
         mostrarNotificacao("Faça login para comentar", false)
     }
@@ -141,13 +162,13 @@ function cardRespotas(nomeUsurio,conteudo,data, likes){
                 <h4>${conteudo}</h4>
             </div>`
 }
-function cardCometarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, likesQtn){
+function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, likesQtn){
     return `<div class="comentario" id="divComentario${idComentario}" xmlns="http://www.w3.org/1999/html">
                 <span class="tituloEdata">
                     <h3>${nomeUsurio}</h3>
                     <span class="spanDataECoracao">
                         <h6>${data}</h6>
-                        <button class="buttonLikeComent">${likesQtn}<ion-icon name="heart-outline" id="coracaoIdComentario${idComentario}"></ion-icon></button>
+                        <button class="buttonLikeComent"> <h2 id="qtnGosteis${idComentario}">0</h2></h3> <ion-icon name="heart-outline" id="coracaoIdComentario${idComentario}"></ion-icon></button>
                     </span>
                 </span>
                 <h4>${conteudo}</h4>
@@ -168,7 +189,7 @@ async function atualizarPagina(){
     }
 
     noticiasMain.innerHTML = ""
-    cometariosMain.innerHTML = ""
+    comentariosMain.innerHTML = ""
 
     await ler(id).then(noticiaEncontrada => {
         noticiaEncontrada = noticiaEncontrada[0]
@@ -195,23 +216,22 @@ async function atualizarPagina(){
     await lerComentarios(id).then(comentarios => {
 
         if (comentarios.length <= 0){
-            cometariosMain.insertAdjacentHTML("beforeend", "<h5>Noticia sem comentarios</h5>")
+            comentariosMain.insertAdjacentHTML("beforeend", "<h5>Noticia sem comentarios</h5>")
         }
 
 
-        comentarios.forEach( async (cometario) => {
+        comentarios.forEach( async (comentario) => {
             // precisei do chat para aprender a usar essa insertAdjacentHTML
-            cometariosMain.insertAdjacentHTML("beforeend", cardCometarios(
-                cometario.id,
-                cometario.idUsuario,
-                cometario.nomeUsurio,
-                cometario.conteudo,
-                cometario.data,
-                cometario.likes.length
+            comentariosMain.insertAdjacentHTML("beforeend", cardComentarios(
+                comentario.id,
+                comentario.idUsuario,
+                comentario.nomeUsurio,
+                comentario.conteudo,
+                comentario.data
             ));
 
-            const comentarioAtualDiv = document.querySelector(`#divComentario${cometario.id}`)
-            await lerRespostas(cometario.id).then((respostas) => {
+            const comentarioAtualDiv = document.querySelector(`#divComentario${comentario.id}`)
+            await lerRespostas(comentario.id).then((respostas) => {
                 respostas.forEach((resposta) => {
                     if (comentarioAtualDiv){
                         comentarioAtualDiv.innerHTML +=  cardRespotas(
@@ -223,18 +243,28 @@ async function atualizarPagina(){
                 })
             })
 
-            console.log(cometario.id)
-            const botaoResposta = document.querySelector(`#BntResp${cometario.id}`);
-            const botaoLike = document.querySelector(`#coracaoIdComentario${cometario.id}`)
+            console.log(comentario.id)
+            const botaoResposta = document.querySelector(`#BntResp${comentario.id}`);
+            const botaoLike = document.querySelector(`#coracaoIdComentario${comentario.id}`)
+            const qtnGosteis = document.querySelector(`#qtnGosteis${comentario.id}`)
 
             if (botaoLike){
-                botaoLike.addEventListener("click", async  () => {
+                await lerCurtidas(comentario.id ,userLogado.id).then((dado) => {
+                    if (dado.length > 0){
+                        botaoLike.name = "heart"
+                    } else {
+                        botaoLike.name = "heart-outline"
+                    }
+                })
+
+                await todosUsuariosNoComent(comentario.id).then((dado) => {
+                    qtnGosteis.innerHTML = dado.length
+                })
+
+                botaoLike.addEventListener("click", async  (it) => {
                     if (userLogado != null){
-
-                        const likesDoUsuario = cometario.likes.filter((likes) => like.idUsuario == userLogado.id && like.idNoticia == cometario.id)
-
-                        await addorRemoveComentarioLike(userLogado.id, cometario.id, false)
-
+                        await addOrRemoveCurtida(comentario.id)
+                        await atualizarPagina()
                     } else {
                         mostrarNotificacao("Faça login para curtir", false)
                     }
@@ -244,11 +274,12 @@ async function atualizarPagina(){
             if (botaoResposta) {
                 botaoResposta.addEventListener("click", async (event)=>{
                     if (userLogado != null){
-                        const input = document.querySelector(`#inputComentario${cometario.id}`)
-
+                        const input = document.querySelector(`#inputComentario${comentario.id}`)
+                        await atualizarPagina()
 
                         if (input.value){
-                            await addResposta(cometario.id, input.value)
+                            await addResposta(comentario.id, input.value)
+                            await atualizarPagina()
                         } else{
                             mostrarNotificacao("Comentario sem conteudo", false)
                         }
@@ -314,8 +345,9 @@ function init(){
     star3.addEventListener("click", setStar3)
     star4.addEventListener("click", setStar4)
     star5.addEventListener("click", setStar5)
-    document.querySelector("#btnEnviar").addEventListener("click", function (){
-        addComentario()
+    document.querySelector("#btnEnviar").addEventListener("click", async () => {
+        await addComentario()
+        await atualizarPagina()
     })
 
     atualizarPagina()

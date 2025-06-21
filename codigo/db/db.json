@@ -117,6 +117,43 @@
       "saved_at": "2025-02-27"
     }
   ],
+  "gosteis": [
+    {
+      "id": "be4c",
+      "idUsuario": "cbd7",
+      "comentarioId": "7510"
+    },
+    {
+      "id": "3e36",
+      "idUsuario": "cbd7",
+      "comentarioId": "a090"
+    },
+    {
+      "id": "7bba",
+      "idUsuario": "cbd7",
+      "comentarioId": "4894"
+    },
+    {
+      "id": "387f",
+      "comentarioId": "a090"
+    },
+    {
+      "id": "efda",
+      "comentarioId": "7510"
+    },
+    {
+      "id": "a3ac",
+      "comentarioId": "4894"
+    },
+    {
+      "id": "8941",
+      "comentarioId": "26f7"
+    },
+    {
+      "id": "916d",
+      "comentarioId": "dc72"
+    }
+  ],
   "comentarios": [
     {
       "id": "7510",
@@ -125,8 +162,7 @@
       "idUsuario": "cbd7",
       "nomeUsurio": "3",
       "conteudo": "teste",
-      "data": "2025-06-19T05:17:56.156Z",
-      "likes": []
+      "data": "2025-06-19T05:17:56.156Z"
     },
     {
       "id": "a090",
@@ -135,7 +171,44 @@
       "idUsuario": "cbd7",
       "nomeUsurio": "3",
       "conteudo": "teste",
-      "data": "2025-06-19T05:40:29.393Z",
+      "data": "2025-06-19T05:40:29.393Z"
+    },
+    {
+      "id": "4894",
+      "stars": 5,
+      "idNoticia": "1",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "teste",
+      "data": "2025-06-21T01:38:07.567Z",
+      "likes": []
+    },
+    {
+      "id": "cadb",
+      "stars": 0,
+      "idNoticia": "0",
+      "idUsuario": "cbd7",
+      "nomeUsurio": "3",
+      "conteudo": "teste3\n",
+      "data": "2025-06-21T02:23:29.400Z",
+      "likes": []
+    },
+    {
+      "id": "26f7",
+      "stars": 0,
+      "idNoticia": "1",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste",
+      "data": "2025-06-21T02:33:49.155Z",
+      "likes": []
+    },
+    {
+      "id": "dc72",
+      "stars": 0,
+      "idNoticia": "2",
+      "nomeUsurio": "joao2",
+      "conteudo": "Teste, sem brava",
+      "data": "2025-06-21T02:38:34.621Z",
       "likes": []
     }
   ],
@@ -155,6 +228,41 @@
       "nomeUsurio": "3",
       "conteudo": "conteudo teste",
       "data": "2025-06-19T05:35:09.305Z"
+    },
+    {
+      "id": "19d6",
+      "comentarioId": "26f7",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste",
+      "data": "2025-06-21T02:33:54.381Z"
+    },
+    {
+      "id": "b76b",
+      "comentarioId": "7510",
+      "nomeUsurio": "joao2",
+      "conteudo": "Gostei dessa noticia, sem brava",
+      "data": "2025-06-21T02:34:04.777Z"
+    },
+    {
+      "id": "f7a3",
+      "comentarioId": "7510",
+      "nomeUsurio": "joao2",
+      "conteudo": "Sem brava",
+      "data": "2025-06-21T02:35:08.840Z"
+    },
+    {
+      "id": "8e3c",
+      "comentarioId": "a090",
+      "nomeUsurio": "joao2",
+      "conteudo": "Ou, sem brava",
+      "data": "2025-06-21T02:35:29.784Z"
+    },
+    {
+      "id": "93ce",
+      "comentarioId": "4894",
+      "nomeUsurio": "joao2",
+      "conteudo": "Sem brava z",
+      "data": "2025-06-21T02:35:35.706Z"
     }
   ],
   "engajamento_comentarios": [
@@ -223,6 +331,13 @@
       "senha": "3",
       "nome": "3",
       "email": "3"
+    },
+    {
+      "id": "bb25",
+      "login": "joao2",
+      "senha": "joao2",
+      "nome": "joao2",
+      "email": "joao2"
     }
   ],
   "forum_canais": [
