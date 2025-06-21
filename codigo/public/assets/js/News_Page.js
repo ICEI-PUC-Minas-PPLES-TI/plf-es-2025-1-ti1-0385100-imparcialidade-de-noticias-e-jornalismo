@@ -162,10 +162,56 @@ function cardRespotas(nomeUsurio,conteudo,data, likes){
                 <h4>${conteudo}</h4>
             </div>`
 }
-function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, likesQtn){
+function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, stars){
+    let estrelas
+    console.log("eakwgfa"+stars)
+
+    if (stars == 1){
+        estrelas = `<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>`
+    } else if (stars == 2){
+        estrelas = `<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>`
+    } else if (stars == 3){
+        estrelas = `<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>`
+    } else if (stars == 4){
+        estrelas = `<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>`
+    } else if (stars == 5){
+        estrelas = `<ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>`
+    } else {
+        estrelas = `<ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>`
+    }
+
+    console.log(estrelas)
+
     return `<div class="comentario" id="divComentario${idComentario}" xmlns="http://www.w3.org/1999/html">
                 <span class="tituloEdata">
                     <h3>${nomeUsurio}</h3>
+                    <span>
+                        ${estrelas}
+                    </span>
                     <span class="spanDataECoracao">
                         <h6>${data}</h6>
                         <button class="buttonLikeComent"> <h2 id="qtnGosteis${idComentario}">0</h2></h3> <ion-icon name="heart-outline" id="coracaoIdComentario${idComentario}"></ion-icon></button>
@@ -227,8 +273,10 @@ async function atualizarPagina(){
                 comentario.idUsuario,
                 comentario.nomeUsurio,
                 comentario.conteudo,
-                comentario.data
+                comentario.data,
+                comentario.stars
             ));
+            console.log(comentario.stars)
 
             const comentarioAtualDiv = document.querySelector(`#divComentario${comentario.id}`)
             await lerRespostas(comentario.id).then((respostas) => {

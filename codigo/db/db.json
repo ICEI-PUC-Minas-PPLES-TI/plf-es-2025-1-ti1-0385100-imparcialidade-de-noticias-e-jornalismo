@@ -210,6 +210,15 @@
       "conteudo": "Teste, sem brava",
       "data": "2025-06-21T02:38:34.621Z",
       "likes": []
+    },
+    {
+      "id": "a84a",
+      "stars": 5,
+      "idNoticia": "2",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste",
+      "data": "2025-06-21T02:48:56.431Z",
+      "likes": []
     }
   ],
   "respostas": [
