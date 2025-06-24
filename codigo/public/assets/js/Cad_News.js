@@ -12,7 +12,7 @@
 // Data: 03/10/2023
 
 // URL da API JSONServer - Substitua pela URL correta da sua API
-const apiUrl = 'http://localhost:3000/noticias';
+const apiUrl = '/noticias';
 
 function displayMessage(mensagem) {
     msg = document.getElementById('msg');

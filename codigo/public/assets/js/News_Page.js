@@ -11,8 +11,21 @@ let noticiasMain = document.querySelector("#noticias")
 let comentariosMain = document.querySelector("#comentario")
 let idNoticia
 
+function formatarData(dataISO) {
+    const data = new Date(dataISO); // converte string em Date
+    const formatada = data.toLocaleString("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+    }).replace(",", " às");
+
+    return formatada;
+}
+
 async function ler(idNoticia) {
-    const resposta = await fetch("http://localhost:3000/noticias?id="+idNoticia);
+    const resposta = await fetch("/noticias?id="+idNoticia);
     const dados = await resposta.json();
     return dados; 
 }
@@ -61,32 +74,39 @@ async function mostrarDuvidaComOk(msg, sucessouErro, descricao = ""){
     }
 }
 async function lerComentarios(idNoticia) {
-    const resposta = await fetch("http://localhost:3000/comentarios?idNoticia="+idNoticia);
+    const resposta = await fetch("/comentarios?idNoticia="+idNoticia);
+    const dados = await resposta.json();
+    return dados;
+}
+async function lerComentariosPeloId(idCometario) {
+    const resposta = await fetch("/comentarios/"+idCometario);
     const dados = await resposta.json();
     return dados;
 }
 async function lerRespostas(idComentario) {
-    const resposta = await fetch("http://localhost:3000/respostas?comentarioId="+idComentario);
+    const resposta = await fetch("/respostas?comentarioId="+idComentario);
     const dados = await resposta.json();
     return dados;
 }
 async function lerCurtidas(comentarioId, idUsuario) {
-    const resposta = await fetch(`http://localhost:3000/gosteis?comentarioId=${comentarioId}&idUsuario=${idUsuario}`);
+    const resposta = await fetch(`/gosteis?comentarioId=${comentarioId}&idUsuario=${idUsuario}`);
     const dados = await resposta.json();
     return dados;
 }
 async function todosUsuariosNoComent(comentarioId) {
-    const resposta = await fetch(`http://localhost:3000/gosteis?comentarioId=${comentarioId}`);
+    const resposta = await fetch(`/gosteis?comentarioId=${comentarioId}`);
     const dados = await resposta.json();
     return dados;
 }
 async function createAny(url, conteudo) {
-    const resposta = await fetch(url, {method: 'POST', body: JSON.stringify(conteudo)})
-    const dados = await resposta.json();
-    return dados;
+    const resposta = await fetch(url, {method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(conteudo)
+    });
+    return await resposta.json();
 }
 async function deleteAnyCurtida(idCurtida) {
-    const resposta = await fetch(`http://localhost:3000/gosteis/${idCurtida}`, {method: 'DELETE'})
+    const resposta = await fetch(`/gosteis/${idCurtida}`, {method: 'DELETE'})
     const dados = await resposta.json();
     return dados;
 }
@@ -97,40 +117,51 @@ async function lerAcessos(idNoticia) {
             mNoticia = noticia
         })
     })
-    mNoticia.acessos = mNoticia.acessos + 1
 
-    let mediaAva = 0.0
-    await lerComentarios(idNoticia).then((comentarios)=>{
-        mNoticia.numAvaliacoes = comentarios.length
-        comentarios.forEach((comentario) => {
-            mediaAva += comentario.stars
+    if (mNoticia != null){
+        mNoticia.acessos = mNoticia.acessos + 1
+
+        let mediaAva = 0.0
+        await lerComentarios(idNoticia).then((comentarios)=>{
+            mNoticia.numAvaliacoes = comentarios.length
+            comentarios.forEach((comentario) => {
+                mediaAva += comentario.stars
+            })
+            mNoticia.mediaAvaliacoes = parseInt(mediaAva / comentarios.length)
         })
-        mNoticia.mediaAvaliacoes = parseInt(mediaAva / comentarios.length)
-    })
-    await fetch("http://localhost:3000/noticias/"+idNoticia, {method: 'PUT', body: JSON.stringify(mNoticia)})
+        await fetch("/noticias/"+idNoticia, {method: 'PUT', headers: {"Content-Type": "application/json"}, body: JSON.stringify(mNoticia)})
+    }
 }
+
 async function addComentario(){
     if (userLogado != null){
         let text = document.querySelector("#inputEnviar").value
+        if (text !== "" && text != null){
+            let dados = {
+                stars : stars,
+                idNoticia : idNoticia,
+                idUsuario : userLogado.id,
+                nomeUsurio : userLogado.nome,
+                conteudo : text,
+                data : new Date().toISOString(),
+                likes : []
+            }
 
-        await  createAny("http://localhost:3000/comentarios", {
-            stars : stars,
-            idNoticia : idNoticia,
-            idUsuario : userLogado.id,
-            nomeUsurio : userLogado.nome,
-            conteudo : text,
-            data : new Date().toISOString(),
-            likes : []
-        })
+            await createAny("/comentarios", dados)
+            await atualizarPagina()
+        } else {
+            await mostrarNotificacao("Comentario vazio", false)
+        }
+
 
     } else {
-        mostrarNotificacao("Faça login para comentar", false)
+        await mostrarNotificacao("Faça login para comentar", false)
     }
 }
 async function addResposta(comentarioId, conteudo){
     if (userLogado != null){
 
-        await createAny("http://localhost:3000/respostas", {
+        await createAny("/respostas", {
             comentarioId: comentarioId,
             idUsuario: userLogado.id,
             nomeUsurio: userLogado.nome,
@@ -152,7 +183,7 @@ async function addOrRemoveCurtida(idComentario){
         if (mCurtidas.length > 0){
             await deleteAnyCurtida(mCurtidas[0].id)
         } else {
-            await  createAny("http://localhost:3000/gosteis", {
+            await  createAny("/gosteis", {
                 idUsuario : userLogado.id,
                 comentarioId : idComentario,
             })
@@ -166,16 +197,19 @@ function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
         mediaAvaliacoes = 1
     }
 
-    return `<a href="./modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
+    return `<a href="/modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
             <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
             <div class="noticia-conteudo">
-                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
+                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="/assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
                 <p>${descricao}</p>
                 <p style="font-size: 0.8rem; color: gray;">${data}</p>
             </div>
         </div></a>`
 }
-function cardRespotas(nomeUsurio,conteudo,data, likes){
+function cardRespotas(nomeUsurio,conteudo,data){
+
+    data = formatarData(data)
+
     return `<div class="respostas">
                 <span class="spanCard">
                     <h3>${nomeUsurio}</h3>
@@ -185,6 +219,9 @@ function cardRespotas(nomeUsurio,conteudo,data, likes){
             </div>`
 }
 function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, stars){
+
+    data = formatarData(data)
+
     let estrelas
 
     if (stars == 1){
@@ -241,6 +278,9 @@ function cardComentarios(idComentario, idUsuario ,nomeUsurio, conteudo, data, st
                     <input type="text" id="inputComentario${idComentario}" placeholder="Digite aqui">
                     <button class="btnRespClass" id="BntResp${idComentario}">Responder</button>
                 </span>
+                <div id="divRespostasComentario${idComentario}">
+                
+                </div>
             </div>`
 }
 async function atualizarPagina(){
@@ -249,7 +289,7 @@ async function atualizarPagina(){
 
     if (!id){
         await mostrarDuvidaComOk("Erro com a noticia", false, "Nao foi possivel indentificar a noticia que voce procura, voltando a tela inicial")
-        window.location.href = "../../index.html"
+        window.location.href = "/index.html"
         return
     }
 
@@ -297,10 +337,11 @@ async function atualizarPagina(){
             ));
 
             const comentarioAtualDiv = document.querySelector(`#divComentario${comentario.id}`)
+            const comentarioAtuaRespsotaslDiv = document.querySelector(`#divRespostasComentario${comentario.id}`)
             await lerRespostas(comentario.id).then((respostas) => {
                 respostas.forEach((resposta) => {
                     if (comentarioAtualDiv){
-                        comentarioAtualDiv.innerHTML +=  cardRespotas(
+                        comentarioAtuaRespsotaslDiv.innerHTML +=  cardRespotas(
                             resposta.nomeUsurio,
                             resposta.conteudo,
                             resposta.data,
@@ -314,8 +355,6 @@ async function atualizarPagina(){
             const qtnGosteis = document.querySelector(`#qtnGosteis${comentario.id}`)
 
             if (botaoLike){
-
-
                 if (userLogado != null){
                     await lerCurtidas(comentario.id, userLogado.id).then((dado) => {
                         if (dado.length > 0){
@@ -324,8 +363,6 @@ async function atualizarPagina(){
                             botaoLike.name = "heart-outline"
                         }
                     })
-
-
                 }
 
                 await todosUsuariosNoComent(comentario.id).then((dado) => {
@@ -335,9 +372,19 @@ async function atualizarPagina(){
                 botaoLike.addEventListener("click", async  (it) => {
                     if (userLogado != null){
                         await addOrRemoveCurtida(comentario.id)
-                        await atualizarPagina()
+                            // atualiza o like
+                            await lerCurtidas(comentario.id, userLogado.id).then((dado) => {
+                                if (dado.length > 0){
+                                    botaoLike.name = "heart"
+                                } else {
+                                    botaoLike.name = "heart-outline"
+                                }
+                            })
+                            await todosUsuariosNoComent(comentario.id).then((dado) => {
+                                qtnGosteis.innerHTML = dado.length
+                            })
                     } else {
-                        mostrarNotificacao("Faça login para curtir", false)
+                        await mostrarNotificacao("Faça login para curtir", false)
                     }
                 })
             }
@@ -346,16 +393,28 @@ async function atualizarPagina(){
                 botaoResposta.addEventListener("click", async (event)=>{
                     if (userLogado != null){
                         const input = document.querySelector(`#inputComentario${comentario.id}`)
-                        await atualizarPagina()
-
                         if (input.value){
                             await addResposta(comentario.id, input.value)
-                            await atualizarPagina()
+
+                            await lerRespostas(comentario.id).then((respostas) => {
+                                comentarioAtuaRespsotaslDiv.innerHTML = ""
+                                respostas.forEach((resposta) => {
+                                    if (comentarioAtuaRespsotaslDiv){
+                                        comentarioAtuaRespsotaslDiv.innerHTML +=  cardRespotas(
+                                            resposta.nomeUsurio,
+                                            resposta.conteudo,
+                                            resposta.data,
+                                        )
+                                    }
+                                })
+                            })
+
+
                         } else{
-                            mostrarNotificacao("Comentario sem conteudo", false)
+                            await mostrarNotificacao("Comentario sem conteudo", false)
                         }
                     } else {
-                        mostrarNotificacao("Faça login para responder", false)
+                        await mostrarNotificacao("Faça login para responder", false)
                     }
                 })
             }
@@ -409,7 +468,7 @@ async function init(){
 
     if (!id){
         await mostrarDuvidaComOk("Erro com a noticia", false, "Nao foi possivel indentificar a noticia que voce procura, voltando a tela inicial")
-        window.location.href = "../../index.html"
+        window.location.href = "/index.html"
         return
     }
 
@@ -425,7 +484,7 @@ async function init(){
             userLogado = null
         }
     } else {
-        document.querySelector("#loginSpan").innerHTML = `<a href="../login/login.html"><h3>Login</h3></a>`
+        document.querySelector("#loginSpan").innerHTML = `<a href="modulos/login/login.html"><h3>Login</h3></a>`
     }
 
     star1.addEventListener("click", setStar1)
@@ -435,10 +494,9 @@ async function init(){
     star5.addEventListener("click", setStar5)
     document.querySelector("#btnEnviar").addEventListener("click", async () => {
         await addComentario()
-        await atualizarPagina()
     })
 
-    atualizarPagina()
+    await atualizarPagina()
 }
 
 init()

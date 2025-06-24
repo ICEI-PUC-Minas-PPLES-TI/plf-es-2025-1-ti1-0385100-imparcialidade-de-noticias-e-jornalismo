@@ -11,9 +11,9 @@
 
 
 // Página inicial de Login
-const LOGIN_URL = "login.html";
-let RETURN_URL = "../../index.html";
-const API_URL = 'http://localhost:3000/usuarios';
+const LOGIN_URL = "/modulos/login/login.html";
+let RETURN_URL = "/index.html";
+const API_URL = '/usuarios';
 
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};

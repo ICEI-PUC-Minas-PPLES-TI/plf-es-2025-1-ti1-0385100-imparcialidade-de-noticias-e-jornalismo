@@ -2,28 +2,30 @@
 <html lang="en">
 
 <head>
+    <base href="/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/News_Page.css">
-    <script src="../../assets/js/News_Page.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/News_Page.css">
+    <script src="/assets/js/News_Page.js" defer></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./assets/js/headerConfig.js" defer></script>
+    <script src="/assets/js/headerConfig.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/header.css">
     <title>Valid News</title>
 </head>
 
 <body id="indexPage">
     <header>
-        <ul>
-            <a href="../../index.html"><li>Valid News</li></a>
-            <li>TENTENCIAS</li>
-            <li>RELEVANCIA</li>
-            <li>FORUM</li>
+        <ul id="headerButtons">
+            <a href="/"><li>Valid News</li></a>
+            <a><li>RELEVANCIA</li></a>
+            <a href="/modulos/semana/semana.html"><li>DA SEMANA</li></a>
+            <a><li>ESPORTE</li></a>
         </ul>
         <span id="loginSpan">
-        </span>
+            </span>
     </header>
 
     <main>

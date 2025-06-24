@@ -14,22 +14,22 @@
       "texto": "O atacante francês Kylian Mbappé iniciou a recuperação da gastroenterite que o tirou do empate com o Al-Hilal, na estreia do time espanhol na Copa do Mundo de Clubes. No entanto, segundo o jornal espanhol \"As\", o camisa 9 ainda não tem condições de enfrentar o Pachuca, domingo, pela segunda rodada do Grupo H.",
       "autor": "Doue",
       "fonte": "G1",
-      "mediaAvaliacoes": null,
-      "numAvaliacoes": 0,
-      "acessos": 26
+      "mediaAvaliacoes": 0,
+      "numAvaliacoes": 4,
+      "acessos": 120
     },
     {
-      "id": "af9a",
+      "id": "2",
       "data": "2025-06-21",
-      "titulo": "Mbappe",
+      "titulo": "Doue",
       "thumb": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/Mbappe-e1744745022618.webp?w=1200&h=675&crop=1",
       "categoria": "Esporte",
       "texto": "O atacante francês Kylian Mbappé iniciou a recuperação da gastroenterite que o tirou do empate com o Al-Hilal, na estreia do time espanhol na Copa do Mundo de Clubes. No entanto, segundo o jornal espanhol \"As\", o camisa 9 ainda não tem condições de enfrentar o Pachuca, domingo, pela segunda rodada do Grupo H.",
       "autor": "Doue",
       "fonte": "G1",
-      "mediaAvaliacoes": 5,
-      "numAvaliacoes": 1,
-      "acessos": 14
+      "mediaAvaliacoes": null,
+      "numAvaliacoes": 0,
+      "acessos": 28
     }
   ],
   "categorias": [
@@ -102,24 +102,24 @@
   ],
   "gosteis": [
     {
-      "id": "9634",
-      "idUsuario": "cbd7",
-      "comentarioId": "5795"
+      "idUsuario": "bb25",
+      "comentarioId": "70T1TT8",
+      "id": "dcq3V5D"
     },
     {
-      "id": "27e1",
-      "idUsuario": "cbd7",
-      "comentarioId": "5736"
+      "idUsuario": "bb25",
+      "comentarioId": "_nDO-fh",
+      "id": "QCInr-D"
     },
     {
-      "id": "b0d9",
-      "idUsuario": "cbd7",
-      "comentarioId": "cadb"
+      "idUsuario": "bb25",
+      "comentarioId": "CUNWA2H",
+      "id": "H9RREz6"
     },
     {
-      "id": "6a3b",
-      "idUsuario": "cbd7",
-      "comentarioId": "d057"
+      "idUsuario": "bb25",
+      "comentarioId": "k60juof",
+      "id": "kJgOijR"
     }
   ],
   "comentarios": [
@@ -133,153 +133,110 @@
       "data": "2025-06-19T05:17:56.156Z"
     },
     {
-      "id": "a090",
       "stars": 0,
-      "idNoticia": "1",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "teste",
-      "data": "2025-06-19T05:40:29.393Z"
-    },
-    {
-      "id": "4894",
-      "stars": 5,
-      "idNoticia": "1",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "teste",
-      "data": "2025-06-21T01:38:07.567Z",
-      "likes": []
-    },
-    {
-      "id": "cadb",
-      "stars": 0,
-      "idNoticia": "0",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "teste3\n",
-      "data": "2025-06-21T02:23:29.400Z",
-      "likes": []
-    },
-    {
-      "id": "26f7",
-      "stars": 0,
-      "idNoticia": "1",
-      "nomeUsurio": "joao2",
-      "conteudo": "teste",
-      "data": "2025-06-21T02:33:49.155Z",
-      "likes": []
-    },
-    {
-      "id": "dc72",
-      "stars": 0,
-      "idNoticia": "2",
-      "nomeUsurio": "joao2",
-      "conteudo": "Teste, sem brava",
-      "data": "2025-06-21T02:38:34.621Z",
-      "likes": []
-    },
-    {
-      "id": "a84a",
-      "stars": 5,
-      "idNoticia": "2",
-      "nomeUsurio": "joao2",
-      "conteudo": "teste",
-      "data": "2025-06-21T02:48:56.431Z",
-      "likes": []
-    },
-    {
-      "id": "5736",
-      "stars": 4,
-      "idNoticia": "0",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "Teste, sem brava",
-      "data": "2025-06-21T17:29:28.120Z",
-      "likes": []
-    },
-    {
-      "id": "5795",
-      "stars": 5,
-      "idNoticia": "0",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "Oz, noticia malada",
-      "data": "2025-06-21T17:29:35.389Z",
-      "likes": []
-    },
-    {
-      "id": "d057",
-      "stars": 2,
-      "idNoticia": "0",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "Sem brava",
-      "data": "2025-06-21T17:29:40.021Z",
-      "likes": []
-    },
-    {
-      "id": "6301",
-      "stars": 5,
-      "idNoticia": "af9a",
+      "idNoticia": "2925",
       "idUsuario": "bb25",
       "nomeUsurio": "joao2",
-      "conteudo": "Gostei",
-      "data": "2025-06-21T20:26:23.777Z",
-      "likes": []
+      "conteudo": "teste",
+      "data": "2025-06-24T00:26:22.627Z",
+      "likes": [],
+      "id": "CUNWA2H"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "Teste 1",
+      "data": "2025-06-24T00:28:06.279Z",
+      "likes": [],
+      "id": "70T1TT8"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste 513",
+      "data": "2025-06-24T00:31:05.010Z",
+      "likes": [],
+      "id": "_nDO-fh"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "Teste",
+      "data": "2025-06-24T00:36:21.293Z",
+      "likes": [],
+      "id": "k60juof"
     }
   ],
   "respostas": [
     {
-      "id": "f4fb",
-      "comentarioId": "7510",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "conteudo teste",
-      "data": "2025-06-19T05:18:42.121Z"
+      "comentarioId": "CUNWA2H",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste 1",
+      "data": "2025-06-24T00:28:11.363Z",
+      "id": 1
     },
     {
-      "id": "f0fe",
-      "comentarioId": "7510",
-      "idUsuario": "cbd7",
-      "nomeUsurio": "3",
-      "conteudo": "conteudo teste",
-      "data": "2025-06-19T05:35:09.305Z"
+      "comentarioId": "CUNWA2H",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste 2",
+      "data": "2025-06-24T00:28:34.417Z",
+      "id": 2
     },
     {
-      "id": "19d6",
-      "comentarioId": "26f7",
+      "comentarioId": "CUNWA2H",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste 3",
+      "data": "2025-06-24T00:29:01.975Z",
+      "id": 3
+    },
+    {
+      "comentarioId": "CUNWA2H",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste 45",
+      "data": "2025-06-24T00:30:50.295Z",
+      "id": 4
+    },
+    {
+      "comentarioId": "70T1TT8",
+      "idUsuario": "bb25",
+      "nomeUsurio": "joao2",
+      "conteudo": "teste 6",
+      "data": "2025-06-24T00:30:58.727Z",
+      "id": 5
+    },
+    {
+      "comentarioId": "_nDO-fh",
+      "idUsuario": "bb25",
       "nomeUsurio": "joao2",
       "conteudo": "teste",
-      "data": "2025-06-21T02:33:54.381Z"
+      "data": "2025-06-24T00:38:41.840Z",
+      "id": 6
     },
     {
-      "id": "b76b",
-      "comentarioId": "7510",
+      "comentarioId": "_nDO-fh",
+      "idUsuario": "bb25",
       "nomeUsurio": "joao2",
-      "conteudo": "Gostei dessa noticia, sem brava",
-      "data": "2025-06-21T02:34:04.777Z"
+      "conteudo": "teste",
+      "data": "2025-06-24T00:38:43.519Z",
+      "id": 7
     },
     {
-      "id": "f7a3",
-      "comentarioId": "7510",
+      "comentarioId": "k60juof",
+      "idUsuario": "bb25",
       "nomeUsurio": "joao2",
-      "conteudo": "Sem brava",
-      "data": "2025-06-21T02:35:08.840Z"
-    },
-    {
-      "id": "8e3c",
-      "comentarioId": "a090",
-      "nomeUsurio": "joao2",
-      "conteudo": "Ou, sem brava",
-      "data": "2025-06-21T02:35:29.784Z"
-    },
-    {
-      "id": "93ce",
-      "comentarioId": "4894",
-      "nomeUsurio": "joao2",
-      "conteudo": "Sem brava z",
-      "data": "2025-06-21T02:35:35.706Z"
+      "conteudo": "teste234",
+      "data": "2025-06-24T00:38:47.666Z",
+      "id": 8
     }
   ],
   "engajamento_comentarios": [

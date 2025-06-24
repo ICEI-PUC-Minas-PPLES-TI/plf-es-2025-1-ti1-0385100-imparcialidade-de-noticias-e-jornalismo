@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/indexCss.css">
-    <script src="./assets/js/indexPage.js" defer></script>
-    <script src="./assets/js/headerConfig.js" defer></script>
+    <script src="assets/js/indexPage.js" defer></script>
+    <script src="assets/js/headerConfig.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/header.css">
     <title>Valid News</title>
 </head>
 <body id="indexPage">
     <header>
         <ul id="headerButtons">
-            <a><li>Valid News</li></a>
+            <a href="/"><li>Valid News</li></a>
             <a><li>RELEVANCIA</li></a>
-            <a href="./modulos/semana/semana.html"><li>DA SEMANA</li></a>
+            <a href="/modulos/semana/semana.html"><li>DA SEMANA</li></a>
             <a><li>ESPORTE</li></a>
         </ul>
         <span>
-            <img src="./assets/images/search_icon.png">
+            <img src="/assets/images/search_icon.png">
             <input type="text" name="" id="pesquisa">
         </span>
         <span id="loginSpan">
@@ -27,7 +28,7 @@
 
     <main>
     <button id="botaoFiltros">
-        <img src="./assets/images/filter_icon.png">
+        <img src="/assets/images/filter_icon.png">
         <h3>Filtros</h3>
     </button>
 
@@ -49,12 +50,12 @@
     </span>
     <h6>Ordernar Por:</h6>
     <Button id="botaoRelevancia">Relevancia</Button>
-    <Button id="botaoRecentes">Recentes <img src="./assets/images/down_arrow.png"></Button>
-    <Button id="botaoAntigas">Antigas <img src="./assets/images/up_arrow.png"></Button>
-    <Button id="botaoMaisAvaliadas">Mais Avaliadas <img src="./assets/images/down_arrow.png"></Button>
-    <Button id="botaoMenosAvaliadas">Menos Avaliadas <img src="./assets/images/up_arrow.png"></Button>
-    <Button id="botaoNotasdescrescente">Notas descrescente <img src="./assets/images/down_arrow.png"></Button>
-    <Button id="botaoNotascresncente">Notas cresncente <img src="./assets/images/up_arrow.png	"></Button>
+    <Button id="botaoRecentes">Recentes <img src="/assets/images/down_arrow.png"></Button>
+    <Button id="botaoAntigas">Antigas <img src="/assets/images/up_arrow.png"></Button>
+    <Button id="botaoMaisAvaliadas">Mais Avaliadas <img src="/assets/images/down_arrow.png"></Button>
+    <Button id="botaoMenosAvaliadas">Menos Avaliadas <img src="/assets/images/up_arrow.png"></Button>
+    <Button id="botaoNotasdescrescente">Notas descrescente <img src="/assets/images/down_arrow.png"></Button>
+    <Button id="botaoNotascresncente">Notas cresncente <img src="/assets/images/up_arrow.png	"></Button>
 </div>
 
     <script defer>
@@ -78,7 +79,7 @@
                 bntLoginMenu = false
             })
         } else {
-            document.querySelector("#loginSpan").innerHTML = `<a href="./modulos/login/login.html"><h3>Login</h3></a>`
+            document.querySelector("#loginSpan").innerHTML = `<a href="/modulos/login/login.html"><h3>Login</h3></a>`
             document.querySelector("#loginMenu").style.display = "none"
         }
     </script>
