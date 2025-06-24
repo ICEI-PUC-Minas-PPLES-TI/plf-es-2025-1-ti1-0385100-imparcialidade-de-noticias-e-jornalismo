@@ -15,8 +15,8 @@
       "autor": "Doue",
       "fonte": "G1",
       "mediaAvaliacoes": 0,
-      "numAvaliacoes": 6,
-      "acessos": 133
+      "numAvaliacoes": 7,
+      "acessos": 157
     },
     {
       "id": "2",
@@ -120,6 +120,11 @@
       "idUsuario": "bb25",
       "comentarioId": "k60juof",
       "id": "kJgOijR"
+    },
+    {
+      "idUsuario": "2UCyZUz",
+      "comentarioId": "CUNWA2H",
+      "id": "VSslYHJ"
     }
   ],
   "comentarios": [
@@ -189,6 +194,16 @@
       "data": "2025-06-24T03:31:44.454Z",
       "likes": [],
       "id": "QLELqxk"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "idUsuario": "2UCyZUz",
+      "nomeUsurio": "teste5215",
+      "conteudo": "gaw",
+      "data": "2025-06-24T03:45:50.440Z",
+      "likes": [],
+      "id": "QZ0psOg"
     }
   ],
   "respostas": [
@@ -288,6 +303,27 @@
       "nome": "rawa",
       "email": "rawa",
       "id": "PNImlyO"
+    },
+    {
+      "login": "testes2",
+      "senha": "testes2",
+      "nome": "testes2",
+      "email": "testes2",
+      "id": "M_pJscN"
+    },
+    {
+      "login": "testes2",
+      "senha": "testes2",
+      "nome": "testes2",
+      "email": "testes2",
+      "id": "eXRKuOh"
+    },
+    {
+      "login": "teste5215",
+      "senha": "teste5215",
+      "nome": "teste5215",
+      "email": "teste5215",
+      "id": "2UCyZUz"
     }
   ]
 }

@@ -86,7 +86,6 @@ function loginUser (login, senha) {
 
             // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
-
             // Retorna true para usuário encontrado
             return true;
         }

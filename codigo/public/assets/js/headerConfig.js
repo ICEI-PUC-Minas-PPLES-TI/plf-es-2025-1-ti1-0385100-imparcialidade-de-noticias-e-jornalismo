@@ -1,6 +1,7 @@
 userLogadoParaOHeader = sessionStorage.getItem("usuarioCorrente")
-userLogadoParaOHeader = JSON.parse(userLogadoParaOHeader)
 if (userLogadoParaOHeader != null){
+
+    userLogadoParaOHeader = JSON.parse(userLogadoParaOHeader)
     document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogadoParaOHeader.nome}`
     document.querySelector("#botaoSair").addEventListener("click", ()=>{
         sessionStorage.removeItem("usuarioCorrente")
