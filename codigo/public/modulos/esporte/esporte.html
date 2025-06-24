@@ -15,24 +15,34 @@
 <body id="indexPage">
 <header>
   <ul id="headerButtons">
-    <a href="/"><li>Valid News</li></a>
-    <a><li>RELEVANCIA</li></a>
-    <a href="/modulos/semana/semana.html"><li>DA SEMANA</li></a>
-    <a><li>ESPORTE</li></a>
+    <a href="/">
+      <li>Valid News</li>
+    </a>
+    <a href="/modulos/relevancia/relevancia.html">
+      <li>RELEVANCIA</li>
+    </a>
+    <a href="/modulos/semana/semana.html">
+      <li>DA SEMANA</li>
+    </a>
+    <a href="/modulos/esporte/esporte.html">
+      <li>ESPORTE</li>
+    </a>
   </ul>
   <span>
-          <img src="/assets/images/search_icon.png">
-          <input type="text" name="" id="pesquisa">
-      </span>
+        <img src="/assets/images/search_icon.png">
+        <input type="text" name="" id="pesquisa">
+    </span>
+
   <span id="loginSpan">
-            </span>
+
+    </span>
 </header>
 
 <div id="loginMenu">
   <Button id="botaoFecharloginMenu">Fechar</Button>
   <Button id="botaoSair">Sair</Button>
 </div>
-<h1>Mais acessadas</h1>
+<h1>Relacionadas ao esporte</h1>
 <div id="noticias"></div>
 
 
@@ -40,14 +50,21 @@
 </body>
 <script defer>
   pesquisaInput = document.querySelector("#pesquisa")
+  let noticiasMain = document.querySelector("#noticias")
 
   async function ler() {
-    const resposta = await fetch("/noticias?_sort=acessos&_order=desc&_limit=1");
+    const resposta = await fetch("http://localhost:3000/noticias");
     const dados = await resposta.json();
     return dados;
   }
 
-  function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes, acessos){
+  async function lerSemana() {
+    const resposta = await fetch("http://localhost:3000/daSemana");
+    const dados = await resposta.json();
+    return dados;
+  }
+
+  function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
     if (mediaAvaliacoes === 0 || mediaAvaliacoes == null){
       mediaAvaliacoes = 1
     }
@@ -59,38 +76,37 @@
                 <p>${descricao}</p>
                 <p style="font-size: 0.8rem; color: gray;">${data}</p>
             </div>
-            <h1>Acessos : ${acessos}</h1>
-        </div>
-        </a>`
+        </div></a>`
   }
 
   function atualizarPagina(){
-    let noticiasMain = document.querySelector("#noticias")
-    noticiasMain.innerHTML = ""
 
 
+    let esporte = "esporte"
 
+    ler().then(dados => {
+      if (pesquisaInput.value !== ""){
+        dados = dados.filter(dado => dado.titulo.toLowerCase().includes(pesquisaInput.value.toLowerCase()))
+      }
 
-      ler().then(dados => {
-        if (pesquisaInput.value !== ""){
-          dados = dados.filter(dado => dado.titulo.toLowerCase().includes(pesquisaInput.value))
+      dados.forEach((dado)=>{
+        if (dado.categoria.toLowerCase() === esporte){
+          noticiasMain.innerHTML += cardNoticia(
+                  dado.id,
+                  dado.titulo,
+                  dado.texto,
+                  dado.thumb,
+                  dado.data,
+                  dado.mediaAvaliacoes,
+                  dado.fonte
+          )
         }
-
-        dados.forEach((dado)=>{
-            noticiasMain.innerHTML += cardNoticia(
-                    dado.id,
-                    dado.titulo,
-                    dado.texto,
-                    dado.thumb,
-                    dado.data,
-                    dado.mediaAvaliacoes,
-                    dado.acessos
-            )
-        })
-      });
+      })
+    });
 
   }
   pesquisaInput.addEventListener("input", ()=>{
+    noticiasMain.innerHTML = ""
     atualizarPagina()
   })
   atualizarPagina()

@@ -156,6 +156,8 @@ async function addTendensiosa(idNoticia, yesOrNo){
             await fetch("/tendensiosa/"+tenteciasEncontradasAux.id,
                 {method: 'PUT', headers: {"Content-Type": "application/json"}, body: JSON.stringify(tenteciasEncontradasAux)})
         }
+    } else {
+        await mostrarNotificacao("Faça login para votar", false)
     }
 }
 async function addComentario(){

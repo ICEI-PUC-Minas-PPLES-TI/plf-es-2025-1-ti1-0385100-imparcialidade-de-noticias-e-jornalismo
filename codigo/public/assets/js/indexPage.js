@@ -102,8 +102,10 @@ function atualizarPagina(){
     coresBotao()
     let noticiasMain = document.querySelector("#noticias")
 
-    noticiasMain.innerHTML = ""
+
     ler().then(dados => {
+
+    noticiasMain.innerHTML = ""
     if (pesquisaInput.value != ""){
         dados = dados.filter(dado => dado.titulo.toLowerCase().includes(pesquisaInput.value))
     }
