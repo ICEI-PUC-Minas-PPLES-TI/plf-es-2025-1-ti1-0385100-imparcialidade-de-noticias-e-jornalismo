@@ -474,19 +474,6 @@ async function init(){
 
     await lerAcessos(id)
 
-
-    userLogado = sessionStorage.getItem("usuarioCorrente")
-    if (userLogado != null){
-        userLogado = JSON.parse(userLogado)
-        if (userLogado.id){
-            document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
-        } else {
-            userLogado = null
-        }
-    } else {
-        document.querySelector("#loginSpan").innerHTML = `<a href="modulos/login/login.html"><h3>Login</h3></a>`
-    }
-
     star1.addEventListener("click", setStar1)
     star2.addEventListener("click", setStar2)
     star3.addEventListener("click", setStar3)

@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/indexCss.css">
     <link rel="icon" href="/assets/images/logo_site.png" type="image/png">
+
     <link rel="stylesheet" href="/assets/css/header.css">
+    <script src="/assets/js/headerConfig.js" defer></script>
+
   <title>Valid News</title>
 </head>
 <body id="indexPage">
@@ -36,30 +39,6 @@
 </body>
 <script defer>
   pesquisaInput = document.querySelector("#pesquisa")
-
-  let userLogado = sessionStorage.getItem("usuarioCorrente")
-  userLogado = JSON.parse(userLogado)
-  console.log(userLogado)
-  if (userLogado != null){
-    document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
-    document.querySelector("#botaoSair").addEventListener("click", ()=>{
-      sessionStorage.removeItem("usuarioCorrente")
-      location.reload()
-    })
-
-    let bntLoginMenu = false
-    document.querySelector("#loginSpan").addEventListener("click", ()=>{
-      document.querySelector("#loginMenu").style.right = bntLoginMenu ? "-500px" : "0"
-      bntLoginMenu = !bntLoginMenu
-    })
-    document.querySelector("#botaoFecharloginMenu").addEventListener("click", ()=>{
-      document.querySelector("#loginMenu").style.right = "-500px"
-      bntLoginMenu = false
-    })
-  } else {
-    document.querySelector("#loginSpan").innerHTML = `<a href="./modulos/login/login.html"><h3>Login</h3></a>`
-    document.querySelector("#loginMenu").style.display = "none"
-  }
 
   async function ler() {
     const resposta = await fetch("http://localhost:3000/noticias");
@@ -121,32 +100,5 @@
   }
   atualizarPagina()
 </script>
-
-<script defer>
-    let userLogado = sessionStorage.getItem("usuarioCorrente")
-    userLogado = JSON.parse(userLogado)
-    console.log(userLogado)
-    if (userLogado != null){
-        document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
-        document.querySelector("#botaoSair").addEventListener("click", ()=>{
-            sessionStorage.removeItem("usuarioCorrente")
-            location.reload()
-        })
-
-        let bntLoginMenu = false
-        document.querySelector("#loginSpan").addEventListener("click", ()=>{
-            document.querySelector("#loginMenu").style.right = bntLoginMenu ? "-500px" : "0"
-            bntLoginMenu = !bntLoginMenu
-        })
-        document.querySelector("#botaoFecharloginMenu").addEventListener("click", ()=>{
-            document.querySelector("#loginMenu").style.right = "-500px"
-            bntLoginMenu = false
-        })
-    } else {
-        document.querySelector("#loginSpan").innerHTML = `<a href="/modulos/login/login.html"><h3>Login</h3></a>`
-        document.querySelector("#loginMenu").style.display = "none"
-    }
-</script>
-
 </body>
 </html>

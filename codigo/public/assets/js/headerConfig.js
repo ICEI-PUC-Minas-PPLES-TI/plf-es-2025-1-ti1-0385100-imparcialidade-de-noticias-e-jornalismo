@@ -1,13 +1,25 @@
 userLogado = sessionStorage.getItem("usuarioCorrente")
+userLogado = JSON.parse(userLogado)
 if (userLogado != null){
-    userLogado = JSON.parse(userLogado)
-    if (userLogado.id){
 
-        if (userLogado.admin){
-            document.querySelector("#headerButtons").innerHTML +=
-                `<a href="/modulos/cadastro/Cad_News.html"><li>CADASTRO DE NOTICIA</li></a>`
-        }
-    } else {
-        userLogado = null
-    }
+
+
+    document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
+    document.querySelector("#botaoSair").addEventListener("click", ()=>{
+        sessionStorage.removeItem("usuarioCorrente")
+        location.reload()
+    })
+
+    let bntLoginMenu = false
+    document.querySelector("#loginSpan").addEventListener("click", ()=>{
+        document.querySelector("#loginMenu").style.right = bntLoginMenu ? "-500px" : "0"
+        bntLoginMenu = !bntLoginMenu
+    })
+    document.querySelector("#botaoFecharloginMenu").addEventListener("click", ()=>{
+        document.querySelector("#loginMenu").style.right = "-500px"
+        bntLoginMenu = false
+    })
+} else {
+    document.querySelector("#loginSpan").innerHTML = `<a href="/modulos/login/login.html"><h3>Login</h3></a>`
+    document.querySelector("#loginMenu").style.display = "none"
 }

@@ -15,8 +15,8 @@
       "autor": "Doue",
       "fonte": "G1",
       "mediaAvaliacoes": 0,
-      "numAvaliacoes": 4,
-      "acessos": 121
+      "numAvaliacoes": 6,
+      "acessos": 133
     },
     {
       "id": "2",
@@ -29,7 +29,7 @@
       "fonte": "G1",
       "mediaAvaliacoes": null,
       "numAvaliacoes": 0,
-      "acessos": 30
+      "acessos": 31
     }
   ],
   "categorias": [
@@ -171,6 +171,24 @@
       "data": "2025-06-24T00:36:21.293Z",
       "likes": [],
       "id": "k60juof"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "idUsuario": "PNImlyO",
+      "nomeUsurio": "rawa",
+      "conteudo": "teste",
+      "data": "2025-06-24T03:25:28.694Z",
+      "likes": [],
+      "id": "jasn4Tc"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "conteudo": "teste",
+      "data": "2025-06-24T03:31:44.454Z",
+      "likes": [],
+      "id": "QLELqxk"
     }
   ],
   "respostas": [
@@ -263,6 +281,13 @@
       "nome": "joao2",
       "email": "joao2",
       "admin": true
+    },
+    {
+      "login": "rawa",
+      "senha": "rawa",
+      "nome": "rawa",
+      "email": "rawa",
+      "id": "PNImlyO"
     }
   ]
 }
