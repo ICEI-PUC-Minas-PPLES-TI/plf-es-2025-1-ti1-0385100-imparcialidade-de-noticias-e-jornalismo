@@ -1,10 +1,7 @@
-userLogado = sessionStorage.getItem("usuarioCorrente")
-userLogado = JSON.parse(userLogado)
-if (userLogado != null){
-
-
-
-    document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
+userLogadoParaOHeader = sessionStorage.getItem("usuarioCorrente")
+userLogadoParaOHeader = JSON.parse(userLogadoParaOHeader)
+if (userLogadoParaOHeader != null){
+    document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogadoParaOHeader.nome}`
     document.querySelector("#botaoSair").addEventListener("click", ()=>{
         sessionStorage.removeItem("usuarioCorrente")
         location.reload()
