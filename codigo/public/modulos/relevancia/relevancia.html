@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/indexCss.css">
+  <link rel="icon" href="/assets/images/logo_site.png" type="image/png">
+
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <script src="/assets/js/headerConfig.js" defer></script>
+
+  <title>Valid News</title>
+</head>
+<body id="indexPage">
+<header>
+  <ul id="headerButtons">
+    <a href="/"><li>Valid News</li></a>
+    <a><li>RELEVANCIA</li></a>
+    <a href="/modulos/semana/semana.html"><li>DA SEMANA</li></a>
+    <a><li>ESPORTE</li></a>
+  </ul>
+  <span>
+          <img src="/assets/images/search_icon.png">
+          <input type="text" name="" id="pesquisa">
+      </span>
+  <span id="loginSpan">
+            </span>
+</header>
+
+<div id="loginMenu">
+  <Button id="botaoFecharloginMenu">Fechar</Button>
+  <Button id="botaoSair">Sair</Button>
+</div>
+<h1>Mais acessadas</h1>
+<div id="noticias"></div>
+
+
+
+</body>
+<script defer>
+  pesquisaInput = document.querySelector("#pesquisa")
+
+  async function ler() {
+    const resposta = await fetch("/noticias?_sort=acessos&_order=desc&_limit=1");
+    const dados = await resposta.json();
+    return dados;
+  }
+
+  function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes, acessos){
+    if (mediaAvaliacoes === 0 || mediaAvaliacoes == null){
+      mediaAvaliacoes = 1
+    }
+
+    return `<a href="../../modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
+            <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
+            <div class="noticia-conteudo">
+                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="../../assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
+                <p>${descricao}</p>
+                <p style="font-size: 0.8rem; color: gray;">${data}</p>
+            </div>
+            <h1>Acessos : ${acessos}</h1>
+        </div>
+        </a>`
+  }
+
+  function atualizarPagina(){
+    let noticiasMain = document.querySelector("#noticias")
+    noticiasMain.innerHTML = ""
+
+
+
+
+      ler().then(dados => {
+        if (pesquisaInput.value !== ""){
+          dados = dados.filter(dado => dado.titulo.toLowerCase().includes(pesquisaInput.value))
+        }
+
+        dados.forEach((dado)=>{
+            noticiasMain.innerHTML += cardNoticia(
+                    dado.id,
+                    dado.titulo,
+                    dado.texto,
+                    dado.thumb,
+                    dado.data,
+                    dado.mediaAvaliacoes,
+                    dado.acessos
+            )
+        })
+      });
+
+  }
+  pesquisaInput.addEventListener("keydown", ()=>{
+    atualizarPagina()
+  })
+  atualizarPagina()
+</script>
+</body>
+</html>

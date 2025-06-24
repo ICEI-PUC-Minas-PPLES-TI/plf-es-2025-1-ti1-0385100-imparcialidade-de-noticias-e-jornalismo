@@ -15,8 +15,8 @@
       "autor": "Doue",
       "fonte": "G1",
       "mediaAvaliacoes": 0,
-      "numAvaliacoes": 7,
-      "acessos": 157
+      "numAvaliacoes": 8,
+      "acessos": 286
     },
     {
       "id": "2",
@@ -27,9 +27,9 @@
       "texto": "O atacante francês Kylian Mbappé iniciou a recuperação da gastroenterite que o tirou do empate com o Al-Hilal, na estreia do time espanhol na Copa do Mundo de Clubes. No entanto, segundo o jornal espanhol \"As\", o camisa 9 ainda não tem condições de enfrentar o Pachuca, domingo, pela segunda rodada do Grupo H.",
       "autor": "Doue",
       "fonte": "G1",
-      "mediaAvaliacoes": null,
-      "numAvaliacoes": 0,
-      "acessos": 31
+      "mediaAvaliacoes": 4,
+      "numAvaliacoes": 2,
+      "acessos": 37
     }
   ],
   "categorias": [
@@ -125,6 +125,46 @@
       "idUsuario": "2UCyZUz",
       "comentarioId": "CUNWA2H",
       "id": "VSslYHJ"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "CUNWA2H",
+      "id": "ingzC8Y"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "70T1TT8",
+      "id": "Ufq0rvz"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "_nDO-fh",
+      "id": "ykxlaTA"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "elt_ILm",
+      "id": "HYkaHFw"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "QZ0psOg",
+      "id": "kAfmok8"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "QLELqxk",
+      "id": "FOeTAb-"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "jasn4Tc",
+      "id": "oYwNYxE"
+    },
+    {
+      "idUsuario": "mCg3BI4",
+      "comentarioId": "k60juof",
+      "id": "wgsQxl7"
     }
   ],
   "comentarios": [
@@ -204,6 +244,36 @@
       "data": "2025-06-24T03:45:50.440Z",
       "likes": [],
       "id": "QZ0psOg"
+    },
+    {
+      "stars": 5,
+      "idNoticia": "2",
+      "idUsuario": "mCg3BI4",
+      "nomeUsurio": "testes",
+      "conteudo": "teste",
+      "data": "2025-06-24T04:02:23.676Z",
+      "likes": [],
+      "id": "U8NW0A3"
+    },
+    {
+      "stars": 3,
+      "idNoticia": "2",
+      "idUsuario": "mCg3BI4",
+      "nomeUsurio": "testes",
+      "conteudo": "testes",
+      "data": "2025-06-24T04:03:26.572Z",
+      "likes": [],
+      "id": "dlwDlW9"
+    },
+    {
+      "stars": 0,
+      "idNoticia": "2925",
+      "idUsuario": "mCg3BI4",
+      "nomeUsurio": "testes",
+      "conteudo": "teste",
+      "data": "2025-06-24T04:39:32.318Z",
+      "likes": [],
+      "id": "elt_ILm"
     }
   ],
   "respostas": [
@@ -324,6 +394,28 @@
       "nome": "teste5215",
       "email": "teste5215",
       "id": "2UCyZUz"
+    },
+    {
+      "login": "testes",
+      "senha": "testes",
+      "nome": "testes",
+      "email": "testes",
+      "id": "mCg3BI4"
+    },
+    {
+      "login": "testes",
+      "senha": "testes",
+      "nome": "testes",
+      "email": "testes",
+      "id": "Ip6RQQj"
+    }
+  ],
+  "tendensiosa": [
+    {
+      "idUsuario": "mCg3BI4",
+      "idNoticia": "2925",
+      "yesOrNo": true,
+      "id": 1
     }
   ]
 }

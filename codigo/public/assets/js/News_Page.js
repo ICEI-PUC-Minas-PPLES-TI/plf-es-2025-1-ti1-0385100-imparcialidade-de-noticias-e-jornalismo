@@ -78,8 +78,13 @@ async function lerComentarios(idNoticia) {
     const dados = await resposta.json();
     return dados;
 }
-async function lerComentariosPeloId(idCometario) {
-    const resposta = await fetch("/comentarios/"+idCometario);
+async function tentenciasUsuario(idNoticia, idUsuario) {
+    const resposta = await fetch("/tendensiosa?idNoticia="+idNoticia+"&idUsuario="+idUsuario);
+    const dados = await resposta.json();
+    return dados;
+}
+async function tentenciasNoticia(idNoticia) {
+    const resposta = await fetch("/tendensiosa?idNoticia="+idNoticia);
     const dados = await resposta.json();
     return dados;
 }
@@ -132,7 +137,27 @@ async function lerAcessos(idNoticia) {
         await fetch("/noticias/"+idNoticia, {method: 'PUT', headers: {"Content-Type": "application/json"}, body: JSON.stringify(mNoticia)})
     }
 }
+async function addTendensiosa(idNoticia, yesOrNo){
+    if (userLogado != null){
 
+        let tenteciasEncontradasAux
+        await tentenciasUsuario(idNoticia, userLogado.id).then((tenciasDaNoticia) => {
+            tenteciasEncontradasAux = tenciasDaNoticia[0]
+        })
+
+        if (tenteciasEncontradasAux == null){
+            await createAny("/tendensiosa", {
+                idUsuario: userLogado.id,
+                idNoticia: idNoticia,
+                yesOrNo: yesOrNo,
+            })
+        } else {
+            tenteciasEncontradasAux.yesOrNo = yesOrNo
+            await fetch("/tendensiosa/"+tenteciasEncontradasAux.id,
+                {method: 'PUT', headers: {"Content-Type": "application/json"}, body: JSON.stringify(tenteciasEncontradasAux)})
+        }
+    }
+}
 async function addComentario(){
     if (userLogado != null){
         let text = document.querySelector("#inputEnviar").value
@@ -170,7 +195,7 @@ async function addResposta(comentarioId, conteudo){
         })
 
     } else {
-        mostrarNotificacao("Faça login para responder", false)
+        await mostrarNotificacao("Faça login para responder", false)
     }
 }
 async function addOrRemoveCurtida(idComentario){
@@ -189,22 +214,41 @@ async function addOrRemoveCurtida(idComentario){
             })
         }
     } else {
-        mostrarNotificacao("Faça login para comentar", false)
+        await mostrarNotificacao("Faça login para comentar", false)
     }
 }
-function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes){
+function cardNoticia(id ,titulo, descricao, foto, data, mediaAvaliacoes, acessos, fonte, paraOSim, paraONao){
     if (mediaAvaliacoes === 0 || mediaAvaliacoes == null){
         mediaAvaliacoes = 1
     }
 
-    return `<a href="/modulos/detalhes/News_Page.html?id=${id}"><div class="noticia">
-            <img class="fotoNoticia" src="${foto}" alt="Imagem da notícia">
-            <div class="noticia-conteudo">
-                <span id="divNomeEstrelas"><h4>${titulo}</h4><img src="/assets/images/stars${mediaAvaliacoes}.png" alt=""></span>
-                <p>${descricao}</p>
-                <p style="font-size: 0.8rem; color: gray;">${data}</p>
-            </div>
-        </div></a>`
+    return `<div class="container">
+    <div class="header">
+      <img src="${foto}">
+      <h1>${titulo}</h1>
+    </div>
+
+    <div class="date">Data da publicacao: ${data}</div>
+
+    <p>
+      ${descricao}
+    </p>
+
+    <div class="rating">
+      <img src="/assets/images/stars${mediaAvaliacoes}.png" alt="">
+      <span style="margin-left: 8px;">(Média: ${mediaAvaliacoes})</span>
+    </div>
+
+    <div class="info-box">
+      Tendenciosa? <span class="simVerde" id="botaoSimDa${id}">Sim(${paraOSim})</span> <span  class="naoVermelho" id="botaoNaoDa${id}">Não(${paraONao})</span>
+    </div>
+
+    <div class="info-box">
+      Acessos: <span>${acessos}</span>
+    </div>
+
+    <a href="${fonte}" target="_blank" class="source-button">Ver fonte</a>
+  </div>`
 }
 function cardRespotas(nomeUsurio,conteudo,data){
 
@@ -296,12 +340,25 @@ async function atualizarPagina(){
     noticiasMain.innerHTML = ""
     comentariosMain.innerHTML = ""
 
-    await ler(id).then(noticiaEncontrada => {
+    await ler(id).then( async (noticiaEncontrada) => {
         noticiaEncontrada = noticiaEncontrada[0]
-
         try{
+
+
+
             if (noticiaEncontrada != null){
                 idNoticia = noticiaEncontrada.id
+                let paraOSim = 0
+                let paraONao = 0
+                await tentenciasNoticia(idNoticia).then((tenciasDaNoticia) => {
+                    tenciasDaNoticia.forEach((tencincia) => {
+                        if (tencincia.yesOrNo){
+                            paraOSim += 1
+                         } else {
+                            paraONao += 1
+                        }
+                    })
+                })
 
                 noticiasMain.innerHTML += cardNoticia(
                     noticiaEncontrada.id,
@@ -310,13 +367,65 @@ async function atualizarPagina(){
                     noticiaEncontrada.thumb,
                     noticiaEncontrada.data,
                     noticiaEncontrada.mediaAvaliacoes,
-                    noticiaEncontrada.fonte
+                    noticiaEncontrada.acessos,
+                    noticiaEncontrada.fonte,
+                    paraOSim,
+                    paraONao
                 )
+
+                const botaoSim = document.querySelector(`#botaoSimDa${noticiaEncontrada.id}`)
+                const botaoNao = document.querySelector(`#botaoNaoDa${noticiaEncontrada.id}`)
+                if (botaoSim){
+                    botaoSim.addEventListener("click", async ()=>{
+                        await addTendensiosa(noticiaEncontrada.id, true)
+
+                        let paraOSim = 0
+                        let paraONao = 0
+
+                        await tentenciasNoticia(idNoticia).then((tenciasDaNoticia) => {
+                            tenciasDaNoticia.forEach((tencincia) => {
+                                if (tencincia.yesOrNo){
+                                    paraOSim += 1
+                                } else {
+                                    paraONao += 1
+                                }
+                            })
+                        })
+                        botaoSim.innerHTML = "Sim("+paraOSim+")"
+                        botaoNao.innerHTML = "Não("+paraONao+")"
+
+
+                    })
+                }
+                if (botaoNao){
+                    botaoNao.addEventListener("click", async ()=>{
+                        let paraOSim = 0
+                        let paraONao = 0
+
+                        await addTendensiosa(noticiaEncontrada.id, false)
+                        await tentenciasNoticia(idNoticia).then((tenciasDaNoticia) => {
+                            tenciasDaNoticia.forEach((tencincia) => {
+                                if (tencincia.yesOrNo){
+                                    paraOSim += 1
+                                } else {
+                                    paraONao += 1
+                                }
+                            })
+                        })
+                        botaoSim.innerHTML = "Sim("+paraOSim+")"
+                        botaoNao.innerHTML = "Não("+paraONao+")"
+
+
+
+                    })
+                }
             }
         } catch (t){
-            mostrarNotificacao("Erro na requisicao", false)
+            await mostrarNotificacao("Erro na requisicao", false)
         }
     });
+
+
 
     await lerComentarios(id).then(comentarios => {
 
@@ -482,6 +591,8 @@ async function init(){
             document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
         } else {
             userLogado = null
+            localStorage.removeItem("usuarioCorrente")
+            location.href = "/"
         }
     } else {
         document.querySelector("#loginSpan").innerHTML = `<a href="modulos/login/login.html"><h3>Login</h3></a>`
