@@ -13,6 +13,7 @@
 
 userLogadoParaOHeader = sessionStorage.getItem("usuarioCorrente")
 if (userLogadoParaOHeader != null){
+    userLogadoParaOHeader = JSON.parse(userLogadoParaOHeader)
     if (!userLogadoParaOHeader.admin){
         location.href = "/"
     }
