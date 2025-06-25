@@ -42,7 +42,7 @@
   pesquisaInput = document.querySelector("#pesquisa")
 
   async function ler() {
-    const resposta = await fetch("/noticias?_sort=acessos&_order=desc");
+    const resposta = await fetch("/noticias?_sort=acessos&_order=asc");
     const dados = await resposta.json();
     return dados;
   }
