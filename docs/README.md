@@ -7,7 +7,6 @@ Informações básicas do projeto.
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
-  * Guilherme d'Angelis Ribeiro Lelis ([GIT HUB](https://github.com/Canaranjo))
   * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
 
 
@@ -197,10 +196,9 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
 | Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/           |
-| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo     |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX  |
-| Protótipo Interativo        | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e            |
-|                             |            |                                                    |
+| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo  |
+| Hospedagem do site          | Render     | https://valid-news.onrender.com/                   |
+| Protótipo Interativo        | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e           |
 
 ## Gerenciamento do Projeto
 
@@ -228,104 +226,133 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 Esta seção apresenta as funcionalidades da solução.Info
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro de Notícias
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a inclusão, leitura, alteração e exclusão de notícias para o sistema
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Noticias]([#ti_ed_contatos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json))
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
+  * Abra o site e efetue o login como adm
   * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
 * **Tela da funcionalidade**:
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+![Funcionalida - Cadastro de Notícias](https://github.com/user-attachments/assets/0be88744-0f7e-49fd-9e61-082392f983c3)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+##### Funcionalidade 2 - Main Page
+
+Permite a visualização de todas as notícias cadastradas 
+
+* **Estrutura de dados:** [Noticias]([#ti_ed_contatos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json))
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+* **Tela da funcionalidade**:
+  
+![Funcionalidade - Main Page](https://github.com/user-attachments/assets/6ca25c8b-8a38-4e18-94d6-e7991f0f04d1)
+
+##### Funcionalidade 3 - News Page
+
+Permite a visualização de uma notícia cadastrada 
+
+* **Estrutura de dados:** [Noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse uma notícia
+ *  Faça um Comentário
+* **Tela da funcionalidade**:
+
+![Funcionalida - News Page](https://github.com/user-attachments/assets/97e98275-d161-4efe-a722-7758519f19df)
+
+##### Funcionalidade 4 - Cadastro de Comentários
+
+Permite a visualização e o cadastro de comentários em uma notícia 
+
+* **Estrutura de dados:** [comentarios](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse uma notícia
+* **Tela da funcionalidade**:
+
+![Funcionalida - Cadastro de Comentarios](https://github.com/user-attachments/assets/6a7f5121-37fd-456b-88ee-a8a84945cf5c)
+
+##### Funcionalidade 5 - Pesquisa
+
+Permite a Pesquisa de uma notícia especifica  
+
+* **Estrutura de dados:** [noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse a barra de pesquisa
+* **Tela da funcionalidade**:
+
+![Funcionalidade - Pesquisa](https://github.com/user-attachments/assets/05312b6d-4600-494e-8624-992b9b31de54)
+
+##### Funcionalidade 6 - Filtragem
+
+Permite a Filtragem de notícias  
+
+* **Estrutura de dados:** [noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse a barra de Filtros
+* **Tela da funcionalidade**:
+
+![Funcionalidade - Filtragem de notícias](https://github.com/user-attachments/assets/903613a0-6cbe-43f7-abfb-14fc1d1930fc)
 
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Notícias
 
-Contatos da aplicação
+Notícias da aplicação
 
 ```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
+ {
+      "id": "fb0b",
+      "data": "2025-06-25",
+      "titulo": "c",
+      "thumb": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "categoria": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "texto": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "autor": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "fonte": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "mediaAvaliacoes": null,
+      "numAvaliacoes": 0,
+      "acessos": 2
+}
   
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Usuários
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+      "id": "3dbc",
+      "login": "joao2",
+      "senha": "joao2",
+      "nome": "joao2",
+      "email": "joao2"
+    }
 ```
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
 
 ## Módulos e APIs
 
 Esta seção apresenta os módulos e APIs utilizados na solução
 
-**Images**:
-
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
-
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* IconsFinder - [https://www.iconfinder.com](https://www.iconfinder.com)
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+* Node.js - [https://nodejs.org/pt](https://nodejs.org/pt)
+* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/)
 
 # Referências
 
 As referências utilizadas no trabalho foram:
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+* Bootstrap 4 - [http://getbootstrap.com/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* W3Schools - [https://www.w3schools.com](https://www.w3schools.com)
