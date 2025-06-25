@@ -2,14 +2,13 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Projeto:** ValidNews
+* **Repositório GitHub:** (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news)
 * **Membros da equipe:**
 
   * João Victor França ([GIT HUB](https://github.com/Franca0118))
-  * [Guilherme d'Angelis Ribeiro Lelis](https://github.com/Canaranjo)
-  * [Carlos Eduardo Pamponet Porto Lima](https://github.com/Carlos-Eduardo-Pamponet)
-  * Francisco Teixeira de Salles Gloor
+  * Carlos Eduardo Pamponet Porto Lima ([GIT HUB](https://github.com/Carlos-Eduardo-Pamponet))
+
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -37,69 +36,31 @@ Imparcialidade de notícias e jornalismo
 
 Hoje em dia, vivemos em um mundo onde temos toda a informação do mundo em nossos bolsos. Com as inúmeras fontes de notícias, o acesso às notícias acaba sendo massivo e instantâneo, com isso, passamos a enfrentar desafios, como por exemplo: distinguir notícias confiáveis, identificar notícias que não sofreram manipulações para agradar terceiros e a identificação de notícias feitas para enganar o leitor. É notavel a existencia de uma dificuldade para que os leitores possam se manter atualizados com as notícias do dia.
 
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
 ## Objetivos
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O ValidNews é uma plataforma que possibilita o próprio leitor a avaliar sua percepção sobre o quão tendenciosa é uma notícia. Desse modo, com base nas avaliacões de leitores passados, se consegue decidir qual notícia ler sabendo que já foi julgada como “verdadeira”.
 
 ## Justificativa
 
-Como observado nas entrevista, "Eu já vi varias pessoas distorcerem notícias a seu favor, apenas para criar
+Como observado nas entrevistas, "Eu já vi varias pessoas distorcerem notícias a seu favor, apenas para criar
 um discurso de ódio contra certos grupos de pessoas, e portais de notícias ajudam a alimentar a visão dessas pessoas.", é notavel a dificulade dos leitores em distinguir notícias confiáveis, diferenciar notícias que não sofreram manipulações para agradar terceiros ou identificar notícias feitas para enganar o leitor. Entrevistados dizem presenciar o uso do meio jornalístico por terceiros em busca de certa aprovação ou covencimento, como por exemplo na politica para fazerem propagandas politicas a seu favor.
 
 Noticias parciais acabam afetando na vida pessoal dos leitores, como dito em nossas entrevistas "A imparcialidade impacta em diversos assuntos considerados polêmicosna visão das pessoas, muitas vezes chegando a nos odiar e nos desentendermos, por terem uma visão errada devido a pedaços de informações tiradas de contexto." levando a pessoa a acreditar em informações manipuladas para agrado politico
 
 Com o aumento de casos de manipulação de fatos e a dificuldade de encontrar noticias imparciais e de qualidade, é essencial oferecer ferramentas a aqueles que buscam noticias uma forma de serem mais críticos e ativos no consumo de notícias, de modo com que possam criar discuções e avaliar as noticias de acordo com sua propria opinião.
 
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 ## Público-Alvo
 
-Nosso público-alvo são todas as pessoas interessadas em se manter bem informadas, com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
-
-Nosso público englota todos aqueles que buscam se manter informadas, e que não gostam de depender do algoritimo lhe recomendar uma noticia, 
-
-...........
-
-
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Nosso público-alvo são todas as aquelas pessoas interessadas em se manter bem informadas com acesso a notícias mais imparciais, confiáveis e contextualizadas, sendo desde de quem lê noticias raramente até aquele que tem horarios pre defenidos para ler.
 
 # Product Discovery
 
 ## Etapa de Entendimento
 
--> **Matriz CSD**
+-> Matriz CSD
 ![image](https://github.com/user-attachments/assets/828c9cc4-cfb7-40a2-821e-4feb48002827) <br>
 
--> **Mapa de stakeholders**
+-> Mapa de stakeholders
 ![image](https://github.com/user-attachments/assets/2778b293-e096-4979-8a4f-199c1e198e5c) <br>
 
 -> Entrevistas qualitativas
@@ -143,12 +104,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Usuário do sistema   | Conseguir filtrar noticias com base nos meus gostos pessoais | Para não usar a plataforma somente para os conteudos bombasticos, ter como ver noticias do meu interesse pessoal, como futebol |
 | Usuário do sistema   | Editar meu perfil | Para que eu possa  |
 
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
 ## Proposta de Valor
 
 ##### Proposta para Persona Gabriel
@@ -180,8 +135,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
+| ID      | Descrição do Requisito                                                              | 
 | RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA     |
 | RNF-002 | Deve processar requisições do usuário em no máximo 3s | BAIXA      |
 | RNF-003 | O sistema deve ter um layout agradavel ao usuario | MEDIA      |
@@ -195,47 +149,32 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+Tela de Login ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_aa7f4a7a](https://github.com/user-attachments/assets/f2105832-9bc6-41fe-86f3-bdad77724801)
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+Página Principal 
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_d7e18e90](https://github.com/user-attachments/assets/7258aca5-2eff-4bc6-8ef9-56be7c211714)
 
-Descrição para a tela XPTO
+Página de resultado de Pesquisa
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_b3b75731](https://github.com/user-attachments/assets/fb40006a-d6be-44b0-b6e5-3a61bd9e3fe0)
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+Página com as notícias Tendenciosas ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_93fbd6ee](https://github.com/user-attachments/assets/dc95787f-a154-4ddd-84de-2533e1f0d694)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+Página com as notícias mais vistas ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_cb13ebe5](https://github.com/user-attachments/assets/04e7517f-c89c-4741-9eb3-b4b8ee5ab2c0)
+
+Página do Fórum para os úsuarios conversarem ![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_b90bba2e](https://github.com/user-attachments/assets/6610ecdc-fad3-44cc-885d-4fa9e70b5a6a)
+
+Página da Notícia
+![Imagem do WhatsApp de 2025-04-08 à(s) 16 54 33_4d765ca8](https://github.com/user-attachments/assets/7c1af644-5972-45fe-aded-b8188daf6c27)
 
 ### User Flow
 
-**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
-
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
->
-> **Orientações**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+![Imagem do WhatsApp de 2025-04-08 à(s) 17 21 12_3549db27](https://github.com/user-attachments/assets/4bfddca0-f439-486a-b586-e1d357c4290c)
 
 ### Protótipo Interativo
 
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/1c0d9j5e)
+[Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/1c0d9j5e)
 
-# Metodologia  
-
+# Metodologia
 O grupo utilizou da plataforma Miro para organizar o Processo de Design Thinking, onde ergueu o problema que seu projeto buscava solucionar, a Parcialidade nas Notícias.  
 
 Dúvidas, Certezas e Suposições foram erguidas, assim como foi criado um mapa de stakeholders para sabermos quem influenciaria o problema. Logo após uma série de entrevistas curstas foram conduzidas ao que foi identificado como Público Alvo, totalizando pouco mais de 11 entrevistados.  
@@ -257,25 +196,15 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
 | Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIMgj92A=/           |
-| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo     |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo        | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e            |
-|                             |            |                                                    |
+| Repositório de código       | GitHub     | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-imparcialidade-de-noticias-e-jornalismo  |
+| Hospedagem do site          | Render     | https://valid-news.onrender.com/                   |
+| Protótipo Interativo        | MarvelApp  | https://marvelapp.com/prototype/1c0d9j5e           |
 
 ## Gerenciamento do Projeto
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
 
 ![Kanban Trello](images/implementado/Kanban.png)
-
-
-> **Orientações**:
->
-> - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-> - [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-> - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 # Solução Implementada
 
@@ -297,105 +226,133 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 Esta seção apresenta as funcionalidades da solução.Info
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro de Notícias
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a inclusão, leitura, alteração e exclusão de notícias para o sistema
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Noticias]([#ti_ed_contatos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json))
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
+  * Abra o site e efetue o login como adm
   * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
 * **Tela da funcionalidade**:
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+![Funcionalida - Cadastro de Notícias](https://github.com/user-attachments/assets/0be88744-0f7e-49fd-9e61-082392f983c3)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+##### Funcionalidade 2 - Main Page
+
+Permite a visualização de todas as notícias cadastradas 
+
+* **Estrutura de dados:** [Noticias]([#ti_ed_contatos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json))
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+* **Tela da funcionalidade**:
+  
+![Funcionalidade - Main Page](https://github.com/user-attachments/assets/6ca25c8b-8a38-4e18-94d6-e7991f0f04d1)
+
+##### Funcionalidade 3 - News Page
+
+Permite a visualização de uma notícia cadastrada 
+
+* **Estrutura de dados:** [Noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse uma notícia
+ *  Faça um Comentário
+* **Tela da funcionalidade**:
+
+![Funcionalida - News Page](https://github.com/user-attachments/assets/97e98275-d161-4efe-a722-7758519f19df)
+
+##### Funcionalidade 4 - Cadastro de Comentários
+
+Permite a visualização e o cadastro de comentários em uma notícia 
+
+* **Estrutura de dados:** [comentarios](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse uma notícia
+* **Tela da funcionalidade**:
+
+![Funcionalida - Cadastro de Comentarios](https://github.com/user-attachments/assets/6a7f5121-37fd-456b-88ee-a8a84945cf5c)
+
+##### Funcionalidade 5 - Pesquisa
+
+Permite a Pesquisa de uma notícia especifica  
+
+* **Estrutura de dados:** [noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse a barra de pesquisa
+* **Tela da funcionalidade**:
+
+![Funcionalidade - Pesquisa](https://github.com/user-attachments/assets/05312b6d-4600-494e-8624-992b9b31de54)
+
+##### Funcionalidade 6 - Filtragem
+
+Permite a Filtragem de notícias  
+
+* **Estrutura de dados:** [noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse a barra de Filtros
+* **Tela da funcionalidade**:
+
+![Funcionalidade - Filtragem de notícias](https://github.com/user-attachments/assets/903613a0-6cbe-43f7-abfb-14fc1d1930fc)
 
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Notícias
 
-Contatos da aplicação
+Notícias da aplicação
 
 ```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
+ {
+      "id": "fb0b",
+      "data": "2025-06-25",
+      "titulo": "c",
+      "thumb": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "categoria": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "texto": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "autor": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "fonte": "http://localhost:3000/modulos/cadastro/Cad_News.html",
+      "mediaAvaliacoes": null,
+      "numAvaliacoes": 0,
+      "acessos": 2
+}
   
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Usuários
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+      "id": "3dbc",
+      "login": "joao2",
+      "senha": "joao2",
+      "nome": "joao2",
+      "email": "joao2"
+    }
 ```
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
 
 ## Módulos e APIs
 
 Esta seção apresenta os módulos e APIs utilizados na solução
 
-**Images**:
-
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
-
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* IconsFinder - [https://www.iconfinder.com](https://www.iconfinder.com)
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+* Node.js - [https://nodejs.org/pt](https://nodejs.org/pt)
+* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/)
 
 # Referências
 
 As referências utilizadas no trabalho foram:
 
-* Nenhuma referência no momento.
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
-
+* Bootstrap 4 - [http://getbootstrap.com/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* W3Schools - [https://www.w3schools.com](https://www.w3schools.com)
