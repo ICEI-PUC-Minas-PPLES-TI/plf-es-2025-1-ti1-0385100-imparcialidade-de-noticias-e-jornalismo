@@ -53,13 +53,7 @@
     let noticiasMain = document.querySelector("#noticias")
 
     async function ler() {
-        const resposta = await fetch("http://localhost:3000/noticias");
-        const dados = await resposta.json();
-        return dados;
-    }
-
-    async function lerSemana() {
-        const resposta = await fetch("http://localhost:3000/daSemana");
+        const resposta = await fetch("/noticias");
         const dados = await resposta.json();
         return dados;
     }
