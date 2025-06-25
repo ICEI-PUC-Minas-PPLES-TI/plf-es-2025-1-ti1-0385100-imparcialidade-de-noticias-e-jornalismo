@@ -6,7 +6,14 @@ if (userLogadoParaOHeader != null){
         document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogadoParaOHeader.nome}`
     }
     if (userLogadoParaOHeader.admin){
-        document.querySelector("#loginMenu").innerHTML += "<a href='/modulos/cadastro/Cad_News.html'><Button>Cadastro</Button></a>"
+        document.querySelector("#loginMenu").innerHTML += "<Button id='btnCadastro'>Cadastro</Button>"
+
+        const btnCadastro = document.querySelector("#btnCadastro")
+        if (btnCadastro){
+            btnCadastro.addEventListener("click", ()=>{
+                window.location = "/modulos/cadastro/Cad_News.html"
+            })
+        }
     }
     let bntLoginMenu = false
 
