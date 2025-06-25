@@ -238,6 +238,66 @@ Permite a inclusão, leitura, alteração e exclusão de notícias para o sistem
 
 ![Funcionalida - Cadastro de Notícias](https://github.com/user-attachments/assets/0be88744-0f7e-49fd-9e61-082392f983c3)
 
+##### Funcionalidade 2 - Main Page
+
+Permite a visualização de todas as notícias cadastradas 
+
+* **Estrutura de dados:** [Noticias]([#ti_ed_contatos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json))
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+* **Tela da funcionalidade**:
+  
+![Funcionalidade - Main Page](https://github.com/user-attachments/assets/6ca25c8b-8a38-4e18-94d6-e7991f0f04d1)
+
+##### Funcionalidade 3 - News Page
+
+Permite a visualização de uma notícia cadastrada 
+
+* **Estrutura de dados:** [Noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse uma notícia
+ *  Faça um Comentário
+* **Tela da funcionalidade**:
+
+![Funcionalida - News Page](https://github.com/user-attachments/assets/97e98275-d161-4efe-a722-7758519f19df)
+
+##### Funcionalidade 4 - Cadastro de Comentários
+
+Permite a visualização e o cadastro de comentários em uma notícia 
+
+* **Estrutura de dados:** [comentarios](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse uma notícia
+* **Tela da funcionalidade**:
+
+![Funcionalida - Cadastro de Comentarios](https://github.com/user-attachments/assets/6a7f5121-37fd-456b-88ee-a8a84945cf5c)
+
+##### Funcionalidade 5 - Pesquisa
+
+Permite a Pesquisa de uma notícia especifica  
+
+* **Estrutura de dados:** [noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse a barra de pesquisa
+* **Tela da funcionalidade**:
+
+![Funcionalidade - Pesquisa](https://github.com/user-attachments/assets/05312b6d-4600-494e-8624-992b9b31de54)
+
+##### Funcionalidade 6 - Filtragem
+
+Permite a Filtragem de notícias  
+
+* **Estrutura de dados:** [noticias](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2025-1-ti1-0385100-valid-news/blob/News-Page/codigo/db/db.json)
+* **Instruções de acesso:**
+ *  Abra o site e efetue o login
+ *  Acesse a barra de Filtros
+* **Tela da funcionalidade**:
+
+![Funcionalidade - Filtragem de notícias](https://github.com/user-attachments/assets/903613a0-6cbe-43f7-abfb-14fc1d1930fc)
+
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
@@ -269,12 +329,11 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
 
 ```json
   {
-      "id": "bb25",
+      "id": "3dbc",
       "login": "joao2",
       "senha": "joao2",
       "nome": "joao2",
-      "email": "joao2",
-      "admin": true
+      "email": "joao2"
     }
 ```
 
