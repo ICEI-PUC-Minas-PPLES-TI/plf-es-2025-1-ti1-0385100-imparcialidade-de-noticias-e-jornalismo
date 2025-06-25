@@ -42,7 +42,7 @@
   pesquisaInput = document.querySelector("#pesquisa")
 
   async function ler() {
-    const resposta = await fetch("/noticias?_sort=acessos&_order=desc&_limit=1");
+    const resposta = await fetch("/noticias?_sort=acessos&_order=desc");
     const dados = await resposta.json();
     return dados;
   }
@@ -87,6 +87,7 @@
                     dado.acessos
             )
         })
+
       });
 
   }
