@@ -11,6 +11,16 @@
 // Autor: Rommel Vieira Carneiro
 // Data: 03/10/2023
 
+userLogadoParaOHeader = sessionStorage.getItem("usuarioCorrente")
+if (userLogadoParaOHeader != null){
+    if (!userLogadoParaOHeader.admin){
+        location.href = "/"
+    }
+} else {
+    location.href = "/"
+}
+
+
 // URL da API JSONServer - Substitua pela URL correta da sua API
 const apiUrl = '/noticias';
 

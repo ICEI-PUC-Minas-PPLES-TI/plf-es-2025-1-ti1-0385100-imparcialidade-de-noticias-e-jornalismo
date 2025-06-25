@@ -72,12 +72,14 @@ header span {
     align-items: center;
     padding: 10px;
 }
-#loginMenu button{
+#loginMenu button {
     background: #e0dede;
     width: 90%;
     padding: 10px;
 }
-
+#loginMenu a{
+    padding: 10px;
+}
 header img{
     width: 40px;
     height: 40px;

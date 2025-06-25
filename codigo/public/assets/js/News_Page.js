@@ -589,9 +589,7 @@ async function init(){
     userLogado = sessionStorage.getItem("usuarioCorrente")
     if (userLogado != null){
         userLogado = JSON.parse(userLogado)
-        if (userLogado.id){
-            document.querySelector("#loginSpan").innerHTML = `Bem vindo, ${userLogado.nome}`
-        } else {
+        if (!userLogado.id){
             userLogado = null
             localStorage.removeItem("usuarioCorrente")
             location.href = "/"
