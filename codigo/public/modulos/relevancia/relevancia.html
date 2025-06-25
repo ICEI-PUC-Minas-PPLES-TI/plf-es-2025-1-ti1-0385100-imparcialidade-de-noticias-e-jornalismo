@@ -42,7 +42,7 @@
   pesquisaInput = document.querySelector("#pesquisa")
 
   async function ler() {
-    const resposta = await fetch("/noticias?_sort=acessos");
+    const resposta = await fetch("/noticias");
     const dados = await resposta.json();
     return dados;
   }
@@ -67,14 +67,12 @@
   function atualizarPagina(){
     let noticiasMain = document.querySelector("#noticias")
     noticiasMain.innerHTML = ""
-
-
-
-
       ler().then(dados => {
         if (pesquisaInput.value !== ""){
           dados = dados.filter(dado => dado.titulo.toLowerCase().includes(pesquisaInput.value))
         }
+
+        dados = dados.sort((a, b) => b.acessos - a.acessos);
 
         dados.forEach((dado)=>{
             noticiasMain.innerHTML += cardNoticia(
