@@ -1,36 +1,11 @@
 {
   "noticias": [
-    {
-      "id": "fb0b",
-      "data": "2025-06-25",
-      "titulo": "c",
-      "thumb": "http://localhost:3000/modulos/cadastro/Cad_News.html",
-      "categoria": "http://localhost:3000/modulos/cadastro/Cad_News.html",
-      "texto": "http://localhost:3000/modulos/cadastro/Cad_News.html",
-      "autor": "http://localhost:3000/modulos/cadastro/Cad_News.html",
-      "fonte": "http://localhost:3000/modulos/cadastro/Cad_News.html",
-      "mediaAvaliacoes": null,
-      "numAvaliacoes": 0,
-      "acessos": 2
-    }
   ],
   "tendencias": [],
   "gosteis": [],
   "comentarios": [],
   "respostas": [],
   "tendensiosa": [
-    {
-      "idUsuario": "mCg3BI4",
-      "idNoticia": "2925",
-      "yesOrNo": true,
-      "id": "1"
-    },
-    {
-      "id": "b4da",
-      "idUsuario": "bb25",
-      "idNoticia": "fb0b",
-      "yesOrNo": false
-    }
   ],
   "usuarios": [
     {
