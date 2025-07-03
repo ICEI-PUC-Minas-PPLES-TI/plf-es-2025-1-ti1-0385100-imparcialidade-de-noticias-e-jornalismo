@@ -6,22 +6,14 @@ authors:
     given-names: Carlos Eduardo
   - family-names: França
     given-names: João Victor
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
+  - family-names: Carneiro
+    given-names: Rommel Vieira
+    name-suffix: Professor
     affiliation: PUC Minas
-    family-names: Vieira Carneiro
-    given-names: Rommel
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: Silva Tavares
+  - family-names: Silva Tavares
     given-names: Cleiton
+    name-suffix: Professor
+    affiliation: PUC Minas
 keywords:
   - News
   - Trend
